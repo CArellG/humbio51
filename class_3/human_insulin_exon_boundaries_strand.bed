@@ -1,0 +1,6 @@
+chr11	0	42	forward	1	+
+chr11	221	425	forward	2	+
+chr11	1212	1431	forward	3	+
+chr11	0	42	reverse	1	-
+chr11	221	425	reverse	2	-
+chr11	1212	1431	reverse	3	-
