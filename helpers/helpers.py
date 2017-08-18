@@ -1,6 +1,6 @@
 #helper scripts
 def load_rnaseq_data(systems_subset="all",
-                     filepath='../datasets/RNAseq/asinh_tpm_minus_sva.tsv',
+                     filepath='../datasets/RNAseq/diff_genes_top_1000.tsv',
                      batches='../datasets/RNAseq/rnaseq_batches.txt'):
     import pandas as pd
     data=pd.read_csv(
@@ -18,5 +18,6 @@ def load_rnaseq_data(systems_subset="all",
         data_subset=data.loc[:,batches_subset['Sample']]
         batches_subset=batches_subset.reset_index()
         return data_subset,batches_subset
+
     
 
