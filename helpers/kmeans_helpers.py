@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score,silhouette_samples
 import matplotlib.cm as cm
-
+import pdb
 
 plotly.offline.init_notebook_mode()
 
@@ -153,6 +153,7 @@ def update_centroids(x,y,cluster_assignments,k):
 
 
 def scikit_kmeans(data,n_clusters):
+    np.random.seed(1234) 
     reduced_data = PCA(n_components=2).fit_transform(data)
     # Step size of the mesh. Decrease to increase the quality of the VQ.
     h = .02     # point in the mesh [x_min, x_max]x[y_min, y_max].
@@ -161,6 +162,7 @@ def scikit_kmeans(data,n_clusters):
     y_min, y_max = reduced_data[:, 1].min() - 1, reduced_data[:, 1].max() + 1
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
 
+    np.random.seed(1234) 
     kmeans = KMeans(init='k-means++', n_clusters=n_clusters, n_init=10)
     kmeans.fit(reduced_data)
     # Obtain labels for each point in mesh. Use last trained model.
@@ -280,3 +282,81 @@ def scikit_silhouette(data,n_clusters):
                  fontsize=14, fontweight='bold')
 
     plt.show()
+
+def plot_heatmap_samples(data,batches):
+    y=list(data["Clusters"])
+    y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
+    trace =[Heatmap(z=np.asarray(data),y=y_unique)]
+    layout = Layout(
+            width = 1000, height = 1000,
+            autosize=False,
+            title='Sample clusters',
+            xaxis=dict(
+                        title='Genes',
+                        titlefont=dict(
+                                        family='Courier New, monospace',
+                                        size=18,
+                                        color='#7f7f7f'
+                                    )
+                    ),
+            yaxis=dict(
+                        title='Cluster_Sample',
+                        titlefont=dict(
+                                        family='Courier New, monospace',
+                                        size=18,
+                                        color='#7f7f7f'
+                                    )
+                    )
+        )
+    fig=Figure(data=trace,layout=layout)
+    plotly.offline.iplot(fig)
+    
+def plot_heatmap_genes(data,batches):
+    y=list(data["Clusters"])
+    y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
+    x=list(batches.sort_values(by="System")["System"])+["Cluster"]
+    x_unique=[x[i]+"_"+str(i) for i in range(len(x))]
+    trace =[Heatmap(z=np.asarray(data),x=x_unique,y=y_unique)]
+    layout = Layout(
+            width = 1000, height = 1000,
+            autosize=False,
+            title='Gene Expression Across Organ Systems',
+            xaxis=dict(
+                        title='System_Sample',
+                        titlefont=dict(
+                                        family='Courier New, monospace',
+                                        size=18,
+                                        color='#7f7f7f'
+                                    )
+                    ),
+            yaxis=dict(
+                        title='Cluster_Gene',
+                        titlefont=dict(
+                                        family='Courier New, monospace',
+                                        size=18,
+                                        color='#7f7f7f'
+                                    )
+                    )
+        )
+    fig=Figure(data=trace,layout=layout)
+    plotly.offline.iplot(fig)
+    
+def get_genes_from_clusters(data,clusters,k):
+    #create a dictionary mapping all differential gene id's to the corresponding gene names. 
+    gene_id_to_gene_name=open('../class_8_GO_enrichment/differential_gene_id_to_gene_name.txt','r').read().strip().split('\n')
+    gene_id_to_gene_name_dict=dict()
+    for line in gene_id_to_gene_name:
+        tokens=line.split()
+        gene_id_to_gene_name_dict[tokens[0]]=tokens[1]
+        
+    for i in range(k):
+        cur_cluster=np.where(clusters==i)
+        cur_genes=data.index[cur_cluster]
+        outf=open(str(i)+".txt",'w')
+        for gene_id in cur_genes:
+            try:
+                gene_name=gene_id_to_gene_name_dict[gene_id]
+                outf.write(gene_name+'\n')
+            except:
+                continue 
+        
