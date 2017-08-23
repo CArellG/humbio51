@@ -25,9 +25,9 @@ gray='#808080'
 color_options=[red,blue,green,purple,orange,gray]
 
 def generate_random_data(N):
-    c1=np.random.normal([-2,2],0.5,([N/3,2]))
-    c2=np.random.normal([0,1],0.5,([N/3,2]))
-    c3=np.random.normal([2,2],0.5,([N/3,2]))
+    c1=np.random.normal([-2,2],0.5,([int(N/3),2]))
+    c2=np.random.normal([0,1],0.5,([int(N/3),2]))
+    c3=np.random.normal([2,2],0.5,([int(N/3),2]))
     A=list(c1[:,0])+list(c2[:,0])+list(c3[:,0])
     B=list(c1[:,1])+list(c2[:,1])+list(c3[:,1])
     return A,B
