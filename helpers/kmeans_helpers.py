@@ -55,13 +55,12 @@ def plot(x_coords,
     
     datasets=[] 
     
-    #Plot the datasets 
+    #Define the x and y values for the scatter plot
     trace=Scatter(
         x=x_coords,
         y=y_coords,
         mode="markers",
-        marker=Marker(color=colors,size=15),
-        visible=True)
+        marker=Marker(color=colors,size=15))
     datasets.append(trace)
     
     #Optionally,also plot the centroids 
@@ -341,9 +340,9 @@ def plot_heatmap_genes(data,batches):
     fig=Figure(data=trace,layout=layout)
     plotly.offline.iplot(fig)
     
-def get_genes_from_clusters(data,clusters,k):
+def get_genes_from_clusters(data,clusters,k,filename='../class_8_GO_enrichment/differential_gene_id_to_gene_name.txt'):
     #create a dictionary mapping all differential gene id's to the corresponding gene names. 
-    gene_id_to_gene_name=open('../class_8_GO_enrichment/differential_gene_id_to_gene_name.txt','r').read().strip().split('\n')
+    gene_id_to_gene_name=open(filename,'r').read().strip().split('\n')
     gene_id_to_gene_name_dict=dict()
     for line in gene_id_to_gene_name:
         tokens=line.split()
@@ -359,4 +358,3 @@ def get_genes_from_clusters(data,clusters,k):
                 outf.write(gene_name+'\n')
             except:
                 continue 
-        
