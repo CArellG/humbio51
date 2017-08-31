@@ -340,7 +340,7 @@ def plot_heatmap_genes(data,batches):
     fig=Figure(data=trace,layout=layout)
     plotly.offline.iplot(fig)
     
-def get_genes_from_clusters(data,clusters,k,filename='../class_8_GO_enrichment/differential_gene_id_to_gene_name.txt'):
+def get_genes_from_clusters(data,clusters,k,filename):
     #create a dictionary mapping all differential gene id's to the corresponding gene names. 
     gene_id_to_gene_name=open(filename,'r').read().strip().split('\n')
     gene_id_to_gene_name_dict=dict()

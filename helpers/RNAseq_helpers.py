@@ -1,7 +1,7 @@
 #helper scripts
 def load_rnaseq_data(systems_subset="all",
-                     filepath='../datasets/RNAseq/diff_genes_top_1000.tsv',
-                     batches='../datasets/RNAseq/rnaseq_batches.txt'):
+                     filepath
+                     batches)
     import pandas as pd
     data=pd.read_csv(
         filepath_or_buffer=filepath,
