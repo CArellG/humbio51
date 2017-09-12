@@ -1,7 +1,7 @@
 #helper scripts
-def load_rnaseq_data(systems_subset="all",
-                     filepath
-                     batches)
+def load_rnaseq_data(systems_subset,
+                     filepath,
+                     batches):
     import pandas as pd
     data=pd.read_csv(
         filepath_or_buffer=filepath,
