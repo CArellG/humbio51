@@ -151,7 +151,7 @@ def update_centroids(x,y,cluster_assignments,k):
 
 
 
-def scikit_kmeans(data,n_clusters):
+def scikit_kmeans(data,n_clusters,xlabel,ylabel,plottitle):
     np.random.seed(1234) 
     reduced_data = PCA(n_components=2).fit_transform(data)
     # Step size of the mesh. Decrease to increase the quality of the VQ.
@@ -180,10 +180,11 @@ def scikit_kmeans(data,n_clusters):
     plt.scatter(centroids[:, 0], centroids[:, 1],
                 marker='x', s=169, linewidths=3,
                 color='w', zorder=10)
-    plt.title('K-means clustering on the RNA-seq samples (PCA-reduced data)\n'
-              'Centroids are marked with white x')
+    plt.title(plottitle+'\n Centroids are marked with white x')
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
     plt.xticks(())
     plt.yticks(())
     plt.show()
