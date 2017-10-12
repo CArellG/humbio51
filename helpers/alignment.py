@@ -1,8 +1,10 @@
 import subprocess
 def align(sample,reference,outputf):
     command_args=["bowtie2","-x",reference,"-f","-U",sample,"-S",outputf+".sam"]
-    proc = subprocess.Popen (command_args, shell=True, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-    out = proc.communicate()
+    print(str(command_args))
+    proc = subprocess.Popen (command_args, shell=False, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    proc.wait() 
+    #out = proc.communicate()
     #print the output of the child process to stdout
     #convert the aligned file from sam to tagAlign format
     convert_sam_to_tagalign(outputf)
@@ -16,7 +18,7 @@ def convert_sam_to_tagalign(sam_filename):
         tokens=line.split()
         if (len(tokens)<10):
             continue
-        print(tokens)
+        #print(tokens)
         chrom=tokens[2]
         startpos=tokens[3]
         seq=tokens[9]
