@@ -283,7 +283,11 @@ def scikit_silhouette(data,n_clusters):
 
     plt.show()
 
-def plot_heatmap_samples(data,batches):
+def plot_heatmap_samples(data):
+    import seaborn as sns;
+    sns.set(color_codes=False)
+    g = sns.clustermap(data)
+    '''
     y=list(data["Clusters"])
     y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
     trace =[Heatmap(z=np.asarray(data),y=y_unique)]
@@ -310,7 +314,7 @@ def plot_heatmap_samples(data,batches):
         )
     fig=Figure(data=trace,layout=layout)
     plotly.offline.iplot(fig)
-    
+    '''
 def plot_heatmap_genes(data,batches):
     y=list(data["Clusters"])
     y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
