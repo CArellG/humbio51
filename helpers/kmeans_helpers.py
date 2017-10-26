@@ -309,7 +309,7 @@ def get_genes_from_clusters(data,clusters,k,filename):
     gene_id_to_gene_name_dict=dict()
     for line in gene_id_to_gene_name:
         tokens=line.split()
-        gene_id_to_gene_name_dict[tokens[0]]=tokens[1]
+        gene_id_to_gene_name_dict[tokens[0].split('.')[0]]=tokens[1]
         
     for i in range(k):
         cur_cluster=np.where(clusters==i)
@@ -317,7 +317,9 @@ def get_genes_from_clusters(data,clusters,k,filename):
         outf=open(str(i)+".txt",'w')
         for gene_id in cur_genes:
             try:
-                gene_name=gene_id_to_gene_name_dict[gene_id]
+                gene_name=gene_id_to_gene_name_dict[gene_id.split('.')[0]]
                 outf.write(gene_name+'\n')
             except:
+                print(gene_id) 
                 continue 
+        outf.close() 

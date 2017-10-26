@@ -1,0 +1,1 @@
+cmd = peaks.txt hg19 peaks_output
