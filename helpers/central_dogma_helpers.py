@@ -1,46 +1,51 @@
 
-def write_mRNA_from_DNA(filename_FASTAgenesequence):
-    FASTAgenesequence=open(filename_FASTAgenesequence,'r')
-    genesequence=(FASTAgenesequence.readlines()[1:])
-    genesequence=''.join(genesequence)
-    genesequence=genesequence.replace('\n','')
+#read in a nucleotide (DNA or RNA) sequence from a FASTA sequence
+
+def read_nt_from_fastasequence(FASTAsequence):
+    FASTAsequence=open(FASTAsequence,'r')
+    nt_sequence=(FASTAsequence.readlines()[1:])
+    nt_sequence=''.join(nt_sequence)
+    nt_sequence=nt_sequence.replace('\n','')
+    return(nt_sequence)
+
+#write an RNA sequence from a DNA sequence
+
+def write_RNA_from_DNA(DNAsequence):
     RNAsequence='' #this defines the variable 'complementarysequence'
-    for i in genesequence:
+    for i in DNAsequence:
         if i=='T':
             RNAsequence=RNAsequence+'U'
         else:
             RNAsequence=RNAsequence+ i
     return(RNAsequence)
 
-def write_protein_from_mRNA(RNAsequence):
+#Write out the protein 1-letter amino acid from an mRNA sequence
 
-#defines the python dictionary for the three letter genetic code 
-    geneticcode3let={'UUU':'Phe','UUC':'Phe','UUA':'Leu','UUG':'Leu',
-         'CUU':'Leu','CUC':'Leu','CUA':'Leu','CUG':'Leu',
-         'AUU':'Ile','AUC':'Ile','AUA':'Ile','AUG':'Met',
-         'GUU':'Val','GUC':'Val','GUA':'Val','GUG':'Val',
-         'UCU':'Ser','UCC':'Ser','UCA':'Ser','UCG':'Ser',
-         'CCU':'Pro','CCC':'Pro','CCA':'Pro','CCG':'Pro',
-         'ACU':'Thr','ACC':'Thr','ACA':'Thr','ACG':'Thr',
-         'GCU':'Ala','GCC':'Ala','GCA':'Ala','GCG':'Ala',
-         'UAU':'Tyr','UAC':'Tyr','UAA':'Stop','UAG':'Stop',
-         'CAU':'His','CAC':'His','CAA':'Gln','CAG':'Gln',
-         'AAU':'Asn','AAC':'Asn','AAA':'Lys','AAG':'Lys',
-         'GAU':'Asp','GAC':'Asp','GAA':'Glu','GAG':'Glu',
-         'UGU':'Cys','UGC':'Cys','UGA':'Stop','UGG':'Trp',
-         'CGU':'Arg','CGC':'Arg','CGA':'Arg','CGG':'Arg',
-         'AGU':'Ser','AGC':'Ser','AGA':'Arg','AGG':'Arg',
-         'GGU':'Gly','GGC':'Gly','GGA':'Gly','GGG':'Gly'}
+def write_protein_1_letter_aa_from_RNA(RNAsequence):
 
-#translates the RNAsequence into protein 
+#defines the python dictionary for the one letter genetic code 
+    geneticcode1let={'UUU':'F','UUC':'F','UUA':'L','UUG':'L',
+     'CUU':'L','CUC':'L','CUA':'L','CUG':'L',
+     'AUU':'I','AUC':'I','AUA':'I','AUG':'M',
+     'GUU':'V','GUC':'V','GUA':'V','GUG':'V',
+     'UCU':'S','UCC':'S','UCA':'S','UCG':'S',
+     'CCU':'P','CCC':'P','CCA':'P','CCG':'P',
+     'ACU':'T','ACC':'T','ACA':'T','ACG':'T',
+     'GCU':'A','GCC':'A','GCA':'A','GCG':'A',
+     'UAU':'Y','UAC':'Y','UAA':'*','UAG':'*',
+     'CAU':'H','CAC':'H','CAA':'Q','CAG':'Q',
+     'AAU':'N','AAC':'N','AAA':'K','AAG':'K',
+     'GAU':'D','GAC':'D','GAA':'E','GAG':'E',
+     'UGU':'C','UGC':'C','UGA':'*','UGG':'W',
+     'CGU':'R','CGC':'R','CGA':'R','CGG':'R',
+     'AGU':'S','AGC':'S','AGA':'R','AGG':'R',
+     'GGU':'G','GGC':'G','GGA':'G','GGG':'G'}
 
-#In the range command: 
-#The first number is the start codon using numbering starting at zero.
-#The second number is the stop codon using numbering starting at zero, so that the stop codon is included. 
-#The third number is the number of basepairs that are skipped every iteration since codons come in threes. 
-
+#defines the string variable proteinseq
     proteinseq=''
 
-    for i in range(59,390,3): 
-        proteinseq=proteinseq+str(geneticcode3let[RNAsequence[i:i+3]])
+#range command (start,stop(not included),step)
+
+    for i in range(0,len(RNAsequence),3): 
+        proteinseq=proteinseq+str(geneticcode1let[RNAsequence[i:i+3]])
     return (proteinseq)

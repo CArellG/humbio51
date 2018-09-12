@@ -92,7 +92,14 @@ def plot(x_coords,
     plotly.offline.iplot(fig)
 
 
-def initialize_centroids(k,min_val,max_val): 
+def initialize_centroids(k,min_val,max_val):
+    '''
+    k -- the number of centroids to initialize. This is equal to the number of clusters to generate. 
+    min_val -- the minimum allowed centroid coordinate (same for both x and y coordinates). 
+    max_val -- the maximum allowed centroid coordinate (same for both x and y coordinates). 
+    
+    returns two lists: the x and y coordinates of the generated centroids. 
+    '''
     x_centroids=[] 
     y_centroids=[] 
     for cluster in range(k): 
@@ -104,7 +111,14 @@ def initialize_centroids(k,min_val,max_val):
     
     
 
-def distance(x,y,x_centroid,y_centroid): 
+def distance(x,y,x_centroid,y_centroid):
+    ''' 
+    x -- list containing the x-coordinates of the points in the dataset 
+    y -- list containing the y-coordinates of the points in the dataset 
+    x_centroid -- x-coordinate of the centroid 
+    y_centroid -- y-coordinate of the centroid 
+    returns a list of Euclidean distances from each point to the centroid. 
+    '''
     distances=[] 
     for i in range(len(x)): 
         cur_x=x[i] 
@@ -283,63 +297,11 @@ def scikit_silhouette(data,n_clusters):
 
     plt.show()
 
-def plot_heatmap_samples(data,batches):
-    y=list(data["Clusters"])
-    y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
-    trace =[Heatmap(z=np.asarray(data),y=y_unique)]
-    layout = Layout(
-            width = 1000, height = 1000,
-            autosize=False,
-            title='Sample clusters',
-            xaxis=dict(
-                        title='Genes',
-                        titlefont=dict(
-                                        family='Courier New, monospace',
-                                        size=18,
-                                        color='#7f7f7f'
-                                    )
-                    ),
-            yaxis=dict(
-                        title='Cluster_Sample',
-                        titlefont=dict(
-                                        family='Courier New, monospace',
-                                        size=18,
-                                        color='#7f7f7f'
-                                    )
-                    )
-        )
-    fig=Figure(data=trace,layout=layout)
-    plotly.offline.iplot(fig)
+def plot_heatmap(data):
+    import seaborn as sns;
+    sns.set(color_codes=False)
+    g = sns.clustermap(data)
     
-def plot_heatmap_genes(data,batches):
-    y=list(data["Clusters"])
-    y_unique=[str(y[i])+"_"+str(i) for i in range(len(y))]
-    x=list(batches.sort_values(by="System")["System"])+["Cluster"]
-    x_unique=[x[i]+"_"+str(i) for i in range(len(x))]
-    trace =[Heatmap(z=np.asarray(data),x=x_unique,y=y_unique)]
-    layout = Layout(
-            width = 1000, height = 1000,
-            autosize=False,
-            title='Gene Expression Across Organ Systems',
-            xaxis=dict(
-                        title='System_Sample',
-                        titlefont=dict(
-                                        family='Courier New, monospace',
-                                        size=18,
-                                        color='#7f7f7f'
-                                    )
-                    ),
-            yaxis=dict(
-                        title='Cluster_Gene',
-                        titlefont=dict(
-                                        family='Courier New, monospace',
-                                        size=18,
-                                        color='#7f7f7f'
-                                    )
-                    )
-        )
-    fig=Figure(data=trace,layout=layout)
-    plotly.offline.iplot(fig)
     
 def get_genes_from_clusters(data,clusters,k,filename):
     #create a dictionary mapping all differential gene id's to the corresponding gene names. 
@@ -347,7 +309,7 @@ def get_genes_from_clusters(data,clusters,k,filename):
     gene_id_to_gene_name_dict=dict()
     for line in gene_id_to_gene_name:
         tokens=line.split()
-        gene_id_to_gene_name_dict[tokens[0]]=tokens[1]
+        gene_id_to_gene_name_dict[tokens[0].split('.')[0]]=tokens[1]
         
     for i in range(k):
         cur_cluster=np.where(clusters==i)
@@ -355,7 +317,9 @@ def get_genes_from_clusters(data,clusters,k,filename):
         outf=open(str(i)+".txt",'w')
         for gene_id in cur_genes:
             try:
-                gene_name=gene_id_to_gene_name_dict[gene_id]
+                gene_name=gene_id_to_gene_name_dict[gene_id.split('.')[0]]
                 outf.write(gene_name+'\n')
             except:
+                print(gene_id) 
                 continue 
+        outf.close() 
