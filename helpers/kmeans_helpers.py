@@ -1,19 +1,13 @@
 import random
 import numpy as np
-#%matplotlib inline
-import matplotlib.pyplot as plt
-import plotly.plotly as py
-import plotly.offline
-from plotly.graph_objs import *
 import numpy as np
 import math 
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score,silhouette_samples
-import matplotlib.cm as cm
+from plotnine import * 
 import pdb
 
-plotly.offline.init_notebook_mode()
 
 red='#ff0000'
 black='#000000'
