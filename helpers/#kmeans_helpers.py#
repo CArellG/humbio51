@@ -24,7 +24,7 @@ def generate_random_data(N):
     c3=np.random.normal([2,2],0.5,([int(N/3),2]))
     A=list(c1[:,0])+list(c2[:,0])+list(c3[:,0])
     B=list(c1[:,1])+list(c2[:,1])+list(c3[:,1])
-    return A,B
+    return A,B 
 
 
 def get_color_assignments(cluster_assignments,num_points):
