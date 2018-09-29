@@ -1,0 +1,164 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook class_01_gene_sequences/1-Reading in a gene sequence.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAHelix.png (::1) 1.10ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNABuildingBlocks.png (::1) 0.89ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAMonomer.png (::1) 0.92ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Working%20Directories.png (::1) 0.91ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-GeneExpression.png (::1) 0.89ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/FileHierarchy2.jpg (::1) 0.87ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-ReadWriteGeneSequence.png (::1) 2.26ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Gene%20Sequence.png (::1) 1.33ms
+[NotebookApp | INFO] Kernel started: 1ad8e36c-d22e-48ae-beff-c2a67a07c802
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 55.49ms referer=http://localhost:8888/notebooks/class_01_gene_sequences/1-Reading%20in%20a%20gene%20sequence.ipynb
+[NotebookApp | INFO] Kernel shutdown: 1ad8e36c-d22e-48ae-beff-c2a67a07c802
+[NotebookApp | WARNING] Notebook class_02_Complementary_Sequences_and_Transcription/2-Complementary Sequences and Transcription.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-CentralDogma.png (::1) 1.15ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-mRNA.png (::1) 0.78ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-BasePairs.png (::1) 0.93ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNA_replication.png (::1) 2.43ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-DNA_Directionality.png (::1) 0.90ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-ComplementaryDNAProgram.png (::1) 1.18ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-Transcription2.png (::1) 1.88ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-exons_introns.png (::1) 0.94ms
+[NotebookApp | INFO] Kernel started: d8f53994-774a-4e05-aaba-c55b1062b13f
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.87ms referer=http://localhost:8888/notebooks/class_02_Complementary_Sequences_and_Transcription/2-Complementary%20Sequences%20and%20Transcription.ipynb
+[NotebookApp | INFO] Kernel shutdown: d8f53994-774a-4e05-aaba-c55b1062b13f
+[NotebookApp | WARNING] Notebook class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 0.81ms
+[NotebookApp | INFO] 302 GET /notebooks/class_03_Translation_and_Intro_to_Bedtools/array_slice_indexing.png (::1) 1.11ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Human%20Chromosomes.jpg (::1) 0.89ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation%20Codons.png (::1) 0.84ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Genetic%20Code.png (::1) 1.06ms
+[NotebookApp | INFO] Kernel started: 0d5adc79-073e-49c4-8a41-ec7d244142eb
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.90ms referer=http://localhost:8888/notebooks/class_03_Translation_and_Intro_to_Bedtools/3-Translation%20and%20Intro%20to%20bedtools.ipynb
+[NotebookApp | INFO] Kernel shutdown: 0d5adc79-073e-49c4-8a41-ec7d244142eb
+[NotebookApp | WARNING] Notebook Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: f1c2d6b7-1853-40fb-9a20-3a499dcf705b
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.89ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%201.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: f1c2d6b7-1853-40fb-9a20-3a499dcf705b
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 64d316bd-1def-43d9-9e0f-4fa27da94080
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 21.60ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%201.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | WARNING] Notebook class_01_gene_sequences/1-Reading in a gene sequence.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAMonomer.png (::1) 2.94ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNABuildingBlocks.png (::1) 1.27ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/FileHierarchy2.jpg (::1) 1.37ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Working%20Directories.png (::1) 1.19ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAHelix.png (::1) 0.95ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-GeneExpression.png (::1) 1.49ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-ReadWriteGeneSequence.png (::1) 1.24ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Gene%20Sequence.png (::1) 1.05ms
+[NotebookApp | INFO] Kernel started: 712faa65-8dd6-40e2-81d1-6554ba5fdd0b
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 6.57ms referer=http://localhost:8888/notebooks/class_01_gene_sequences/1-Reading%20in%20a%20gene%20sequence.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /class_01_gene_sequences/1-Reading in a gene sequence.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_01_gene_sequences/1-Reading in a gene sequence.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | WARNING] Notebook class_02_Complementary_Sequences_and_Transcription/2-Complementary Sequences and Transcription.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-CentralDogma.png (::1) 2.14ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-ComplementaryDNAProgram.png (::1) 0.92ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-DNA_Directionality.png (::1) 1.34ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-mRNA.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-BasePairs.png (::1) 1.42ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNA_replication.png (::1) 0.91ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-Transcription2.png (::1) 1.27ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/2-exons_introns.png (::1) 2.01ms
+[NotebookApp | INFO] Kernel started: 169cc198-129d-467e-a922-2b1656988dca
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.55ms referer=http://localhost:8888/notebooks/class_02_Complementary_Sequences_and_Transcription/2-Complementary%20Sequences%20and%20Transcription.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /class_02_Complementary_Sequences_and_Transcription/2-Complementary Sequences and Transcription.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /class_01_gene_sequences/1-Reading in a gene sequence.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_01_gene_sequences/1-Reading in a gene sequence.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Kernel shutdown: 712faa65-8dd6-40e2-81d1-6554ba5fdd0b
+[NotebookApp | INFO] Kernel shutdown: 169cc198-129d-467e-a922-2b1656988dca
+[NotebookApp | INFO] Kernel shutdown: 64d316bd-1def-43d9-9e0f-4fa27da94080
+[NotebookApp | INFO] Kernel started: 96e304ca-8705-4c43-84f7-8cfe1bfd2edd
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Genetic%20Code.png (::1) 2.69ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation%20Codons.png (::1) 1.76ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 1.39ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Human%20Chromosomes.jpg (::1) 1.16ms
+[NotebookApp | INFO] 302 GET /notebooks/class_03_Translation_and_Intro_to_Bedtools/array_slice_indexing.png (::1) 1.12ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.99ms referer=http://localhost:8888/notebooks/class_03_Translation_and_Intro_to_Bedtools/3-Translation%20and%20Intro%20to%20bedtools.ipynb
+[NotebookApp | WARNING] Notebook class_04_pairwise_sequence_alignment/4-Pairwise Sequence Alignment.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/4-Package.png (::1) 1.25ms
+[NotebookApp | INFO] Kernel started: 3ea8ec7d-cc8d-4e21-a469-fe9d53de3380
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.55ms referer=http://localhost:8888/notebooks/class_04_pairwise_sequence_alignment/4-Pairwise%20Sequence%20Alignment.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /class_04_pairwise_sequence_alignment/4-Pairwise Sequence Alignment.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Saving file at /class_03_Translation_and_Intro_to_Bedtools/3-Translation and Intro to bedtools.ipynb
+[NotebookApp | INFO] Kernel shutdown: 96e304ca-8705-4c43-84f7-8cfe1bfd2edd
+[NotebookApp | INFO] Saving file at /class_04_pairwise_sequence_alignment/4-Pairwise Sequence Alignment.ipynb
+[NotebookApp | INFO] Saving file at /class_04_pairwise_sequence_alignment/4-Pairwise Sequence Alignment.ipynb
+[NotebookApp | INFO] Kernel shutdown: 3ea8ec7d-cc8d-4e21-a469-fe9d53de3380
+[NotebookApp | INFO] Kernel started: 5877a16b-6a15-48a2-996b-fd857d90fa56
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 5.02ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%201.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 1.ipynb
+[NotebookApp | INFO] Kernel shutdown: 5877a16b-6a15-48a2-996b-fd857d90fa56
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
