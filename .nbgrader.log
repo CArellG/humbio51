@@ -280,3 +280,46 @@
 [NotebookApp | INFO] Kernel shutdown: 222b5e09-22c2-4ca3-917e-d757b870760a
 [NotebookApp | INFO] Kernel shutdown: f788b718-9446-4ced-bdda-5e80ecae629a
 [NotebookApp | INFO] Kernel shutdown: 8cc1d83e-c23d-41eb-9b29-2c88168e0010
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance1.png (::1) 1.05ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance2.png (::1) 0.83ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-AlignSeq2.png (::1) 0.85ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-AlignSeq1.png (::1) 0.85ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance-nucleotides-1.png (::1) 1.19ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance-nucleotides-2.png (::1) 0.82ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-BasePairs_Purines_and_Pyrimidines_Updated.png (::1) 1.23ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-SequenceScoringMatrix.png (::1) 1.63ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-MappingVsAlignment.png (::1) 1.29ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashBasedMappingStep1.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashStep2.png (::1) 1.21ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashStep3.png (::1) 1.19ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-MatchAmbiguity.png (::1) 1.14ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Repeats.png (::1) 1.06ms
+[NotebookApp | WARNING] Notebook class_06_Epigenome_Roadmap_Browser_Highthrougput_Sequencing_and_RNA_Seq/class_06_Introduction to Epigenome Browser, High-throughput sequencing and RNA sequencing.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser1.png (::1) 1.43ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser2.png (::1) 1.06ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser3.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-BrowserTutorial1.png (::1) 0.96ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-BrowserTutorial2.png (::1) 1.21ms
+[NotebookApp | WARNING] Notebook class_06_Epigenome_Roadmap_Browser_Highthrougput_Sequencing_and_RNA_Seq/class_06_Introduction to Epigenome Browser, High-throughput sequencing and RNA sequencing.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser1.png (::1) 1.69ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser2.png (::1) 1.22ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-BrowserTutorial2.png (::1) 1.23ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-BrowserTutorial1.png (::1) 0.90ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Browser3.png (::1) 0.86ms
+[NotebookApp | INFO] Kernel started: f19727af-4336-4382-a76d-e5c8cf607315
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 21.30ms referer=http://localhost:8888/notebooks/class_06_Epigenome_Roadmap_Browser_Highthrougput_Sequencing_and_RNA_Seq/class_06_Introduction%20to%20Epigenome%20Browser%2C%20High-throughput%20sequencing%20and%20RNA%20sequencing.ipynb
+[NotebookApp | INFO] Kernel shutdown: f19727af-4336-4382-a76d-e5c8cf607315
+[NotebookApp | INFO] Saving file at /class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb
+[NotebookApp | INFO] Saving file at /class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
