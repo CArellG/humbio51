@@ -27,7 +27,9 @@ def convert_sam_to_tagalign(sam_filename):
         else:
             endpos="0"
         q=tokens[4]
-        outf.write(chrom+'\t'+startpos+'\t'+endpos+'\t'+seq+'\t'+q+'\t'+'+'+'\n')
+        readname=tokens[0]
+        flag=tokens[1]
+        outf.write(readname+'\t'+flag+'\t'+chrom+'\t'+startpos+'\t'+endpos+'\t'+seq+'\t'+q+'\t'+'+'+'\n')
 
 def select_column(outputf,column):
     data=open(outputf,'r').read().strip().split('\n')
