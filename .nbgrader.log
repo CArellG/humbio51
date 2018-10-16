@@ -280,3 +280,227 @@
 [NotebookApp | INFO] Kernel shutdown: 222b5e09-22c2-4ca3-917e-d757b870760a
 [NotebookApp | INFO] Kernel shutdown: f788b718-9446-4ced-bdda-5e80ecae629a
 [NotebookApp | INFO] Kernel shutdown: 8cc1d83e-c23d-41eb-9b29-2c88168e0010
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook Weekly Assignments/HUMBIO51 Assignment Week 3.ipynb is not trusted
+[NotebookApp | WARNING] Notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.18ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.16ms
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 10.77ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.14ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 0.89ms
+[NotebookApp | INFO] Kernel started: 853cb8eb-50f3-4334-b057-0a92e6475087
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 5.62ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 3.30ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 2.69ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] Notebook class_19_GWAS_and_Course_Review /class_19_GWAS_and_Course_Review.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 15cd3706-c2a1-44e7-be05-6f168510c6a7
+[NotebookApp | INFO] 302 GET /notebooks/Images/11_MultipleEnhancers.jpg (::1) 1.36ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.23ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/11_PromoterEnhancer.jpg (::1) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 1.29ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 2.81ms referer=http://localhost:8888/notebooks/class_19_GWAS_and_Course_Review%20/class_19_GWAS_and_Course_Review.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_19_GWAS_and_Course_Review /class_19_GWAS_and_Course_Review.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_19_GWAS_and_Course_Review /class_19_GWAS_and_Course_Review.ipynb
+[NotebookApp | WARNING] Notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.18ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 0.83ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.32ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 0.85ms
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 3.51ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 2.49ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] Notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.12ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 0.96ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.06ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 0.84ms
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 3.36ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 2.30ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Kernel started: aac78027-fe24-43d7-8f1f-5bde1893fd1b
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.51ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%204.ipynb
+[NotebookApp | INFO] Kernel shutdown: aac78027-fe24-43d7-8f1f-5bde1893fd1b
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: 853cb8eb-50f3-4334-b057-0a92e6475087
+[NotebookApp | INFO] Kernel shutdown: 15cd3706-c2a1-44e7-be05-6f168510c6a7
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 52778122-f71e-4985-ad49-91d2a6fcf939
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 3.14ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.59ms
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1): No such file or directory: Images/7-IndexingSelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-IndexingSelectingRowAndColumns.png (::1) 31.11ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.67ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 2.04ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.07ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-Indexing_SelectingRowAndColumns.png (::1): No such file or directory: Images/7-Indexing_SelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-Indexing_SelectingRowAndColumns.png (::1) 4.63ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-Indexing_SelectingRowAndColumns.png (::1): No such file or directory: Images/7-Indexing_SelectingRowAndColumns.png
+[NotebookApp | WARNING] 404 GET /notebooks/Images/7-Indexing_SelectingRowAndColumns.png (::1) 3.54ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns.png (::1) 1.48ms
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 0.94ms
+[NotebookApp | WARNING] Notebook class_01_gene_sequences/1-Reading in a gene sequence.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: ac016f2e-82a7-41a5-af3b-823a5f698267
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAHelix.png (::1) 2.40ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNABuildingBlocks.png (::1) 1.36ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-DNAMonomer.png (::1) 1.24ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-GeneExpression.png (::1) 2.05ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Working%20Directories.png (::1) 1.78ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/FileHierarchy2.jpg (::1) 1.41ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-ReadWriteGeneSequence.png (::1) 1.39ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/1-Gene%20Sequence.png (::1) 1.43ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 26.39ms referer=http://localhost:8888/notebooks/class_01_gene_sequences/1-Reading%20in%20a%20gene%20sequence.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Saving untrusted notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel restarted: 52778122-f71e-4985-ad49-91d2a6fcf939
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel restarted: 52778122-f71e-4985-ad49-91d2a6fcf939
+[NotebookApp | INFO] Kernel shutdown: 52778122-f71e-4985-ad49-91d2a6fcf939
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | WARNING] Session not found: session_id='72e31e0f-9603-4215-8f56-d206b771ea51'
+[NotebookApp | WARNING] 404 DELETE /api/sessions/72e31e0f-9603-4215-8f56-d206b771ea51 (::1) 1.42ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: ac016f2e-82a7-41a5-af3b-823a5f698267
+[NotebookApp | INFO] Kernel started: 6446dcaf-f272-41d3-941b-96db5568dc3e
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.99ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.95ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.27ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.26ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 2.46ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 6.07ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 6446dcaf-f272-41d3-941b-96db5568dc3e
+[NotebookApp | INFO] Kernel started: 94684e89-3ec4-4958-8077-8b86e79576d5
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.37ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 0.97ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.38ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.30ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 2.32ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.72ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.29ms
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel restarted: 94684e89-3ec4-4958-8077-8b86e79576d5
+[NotebookApp | INFO] Kernel restarted: 94684e89-3ec4-4958-8077-8b86e79576d5
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 94684e89-3ec4-4958-8077-8b86e79576d5
+[NotebookApp | INFO] Kernel started: b2efb94b-5ce0-4e6e-9c0a-c0b93ca61506
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.45ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.20ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.60ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.62ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 1.53ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.32ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 2.84ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: b2efb94b-5ce0-4e6e-9c0a-c0b93ca61506
+[NotebookApp | INFO] Kernel started: 6e78bb68-926b-40a8-9a52-815b630ee540
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.98ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.70ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 2.58ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.16ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.22ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 6e78bb68-926b-40a8-9a52-815b630ee540
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 3ac16d83-0478-4f14-810e-683eeecec0a4
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 2.46ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.66ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.32ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.74ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 1.36ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.34ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 11.72ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 3ac16d83-0478-4f14-810e-683eeecec0a4
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
