@@ -481,3 +481,26 @@
 [NotebookApp | INFO] interrupted
 [NotebookApp | CRITICAL] Shutdown confirmed
 [NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 3ac16d83-0478-4f14-810e-683eeecec0a4
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 2.46ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-gene_expression.png (::1) 1.66ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.32ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.74ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 1.36ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.34ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 11.72ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 3ac16d83-0478-4f14-810e-683eeecec0a4
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
