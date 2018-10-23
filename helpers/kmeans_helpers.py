@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings("ignore")
 import random
 import numpy as np
 import math
