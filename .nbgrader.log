@@ -504,3 +504,305 @@
 [NotebookApp | INFO] interrupted
 [NotebookApp | CRITICAL] Shutdown confirmed
 [NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook Weekly Assignments/HUMBIO51 Assignment Week 3.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: f7e60666-ad38-4a41-bcab-761da0f6a318
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 17.37ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%203.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 3.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: f7e60666-ad38-4a41-bcab-761da0f6a318
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8889/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance-nucleotides-1.png (::1) 1.29ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance2.png (::1) 1.34ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance1.png (::1) 1.21ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-AlignSeq2.png (::1) 1.38ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-AlignSeq1.png (::1) 1.00ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-EditDistance-nucleotides-2.png (::1) 0.81ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-BasePairs_Purines_and_Pyrimidines_Updated.png (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-SequenceScoringMatrix.png (::1) 1.27ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-MappingVsAlignment.png (::1) 1.73ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashBasedMappingStep1.png (::1) 1.53ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashStep2.png (::1) 1.19ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-HashStep3.png (::1) 2.24ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-MatchAmbiguity.png (::1) 1.48ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/5-Repeats.png (::1) 1.46ms
+[NotebookApp | INFO] Kernel started: 71466345-706e-48ab-9ec8-686da4a1c726
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 55.47ms referer=http://localhost:8889/notebooks/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb
+[NotebookApp | INFO] Kernel started: 45fb6297-af54-4d2c-8d98-7f7ce91cb550
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 10.65ms referer=http://localhost:8889/notebooks/class_04_pairwise_sequence_alignment/4-Pairwise%20Sequence%20Alignment.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/4-Package.png (::1) 2.76ms
+[NotebookApp | INFO] Saving file at /class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping/class_05_Multiple_Sequence_Alignment_and_Introduction_to_Read_Mapping.ipynb
+[NotebookApp | INFO] Kernel shutdown: 71466345-706e-48ab-9ec8-686da4a1c726
+[NotebookApp | INFO] Kernel shutdown: 45fb6297-af54-4d2c-8d98-7f7ce91cb550
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 74910d35-fe5c-4c02-9aa4-bbbdeafceaae
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Genetic%20Code.png (::1) 1.84ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation%20Codons.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 1.26ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.39ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Human%20Chromosomes.jpg (::1) 1.35ms
+[NotebookApp | INFO] 302 GET /notebooks/class_03_Translation_and_Intro_to_Bedtools/array_slice_indexing.png (::1) 1.63ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 20.57ms referer=http://localhost:8888/notebooks/class_03_Translation_and_Intro_to_Bedtools/3-Translation%20and%20Intro%20to%20bedtools.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: 74910d35-fe5c-4c02-9aa4-bbbdeafceaae
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] interrupted
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 13981496-de1e-4dd0-adbc-12fbae899d33
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Genetic%20Code.png (::1) 7.18ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation%20Codons.png (::1) 3.05ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 1.44ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.35ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Human%20Chromosomes.jpg (::1) 3.17ms
+[NotebookApp | INFO] 302 GET /notebooks/class_03_Translation_and_Intro_to_Bedtools/array_slice_indexing.png (::1) 1.29ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 17.69ms referer=http://localhost:8888/notebooks/class_03_Translation_and_Intro_to_Bedtools/3-Translation%20and%20Intro%20to%20bedtools.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation.png (::1) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-CDS.png (::1) 1.53ms
+[NotebookApp | INFO] 302 GET /notebooks/class_03_Translation_and_Intro_to_Bedtools/array_slice_indexing.png (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Human%20Chromosomes.jpg (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Genetic%20Code.png (::1) 1.24ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/3-Translation%20Codons.png (::1) 1.63ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 16.57ms referer=http://localhost:8888/notebooks/class_03_Translation_and_Intro_to_Bedtools/3-Translation%20and%20Intro%20to%20bedtools.ipynb
+[NotebookApp | INFO] Kernel shutdown: 13981496-de1e-4dd0-adbc-12fbae899d33
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: e7ead7ee-e6e3-4f46-9634-bb937e136d2f
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 19.56ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%204.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Kernel started: 643abbcc-7510-4867-862e-76d7e1983d14
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 8.01ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%203.ipynb
+[NotebookApp | INFO] Kernel shutdown: 643abbcc-7510-4867-862e-76d7e1983d14
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: e7ead7ee-e6e3-4f46-9634-bb937e136d2f
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8888/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-StartingDataFiles.png (::1) 1.45ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-GeneSampleSelect.png (::1) 0.98ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 0.96ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.02ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transposeRNA.png (::1) 0.88ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 1.38ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 0.98ms
+[NotebookApp | INFO] Kernel started: fda339b4-136a-4c19-a244-5953dad97e89
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 54.19ms referer=http://localhost:8888/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_07_RNAseq_quantification_variation/7-RNAseq quantification variation.ipynb
+[NotebookApp | INFO] Kernel started: 39174ccb-af43-4c76-b2a3-2b053805f128
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_function_go_allgenes.update.png (::1) 5.12ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/9-GOexample.png (::1) 2.09ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/9-GOexplanation.png (::1) 1.32ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_process_go_allgenes.update.png (::1) 1.41ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_component_go_allgenes.png (::1) 1.27ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_0.process.png (::1) 1.28ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_0.function.png (::1) 2.15ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_0.component.png (::1) 1.35ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_1.process.png (::1) 1.77ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_1.function.png (::1) 1.29ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_1.component.png (::1) 2.15ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_2.process.png (::1) 2.88ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_3.component.png (::1) 1.40ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_2.function.png (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_2.component.png (::1) 1.24ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_3.process.png (::1) 1.23ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/10_3.function.png (::1) 3.34ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.89ms referer=http://localhost:8888/notebooks/class_10_GO_enrichment/10-GO%20Enrichment.ipynb
+[NotebookApp | INFO] Saving file at /class_10_GO_enrichment/10-GO Enrichment.ipynb
+[NotebookApp | INFO] Kernel started: b8a48c0f-0ac4-4921-8cd2-b35796ce639d
+[NotebookApp | WARNING] 404 GET /notebooks/class_09_Kmeans_Clustering/euclidean_distance.png (::1): No such file or directory: class_09_Kmeans_Clustering/euclidean_distance.png
+[NotebookApp | WARNING] 404 GET /notebooks/class_09_Kmeans_Clustering/euclidean_distance.png (::1) 5.12ms referer=http://localhost:8888/notebooks/class_09_Kmeans_Clustering/9-Introduction%20to%20Kmeans%20clustering%20of%20samples.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/Images/inter_cluster_vs_intra_cluster.png (::1) 1.40ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 2.02ms referer=http://localhost:8888/notebooks/class_09_Kmeans_Clustering/9-Introduction%20to%20Kmeans%20clustering%20of%20samples.ipynb
+[NotebookApp | INFO] Saving file at /class_09_Kmeans_Clustering/9-Introduction to Kmeans clustering of samples.ipynb
+[NotebookApp | INFO] Kernel started: 8ed85851-4cb8-4161-b54a-ba6290e06a7a
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.71ms referer=http://localhost:8888/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%204.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: fda339b4-136a-4c19-a244-5953dad97e89
+[NotebookApp | INFO] Kernel shutdown: 8ed85851-4cb8-4161-b54a-ba6290e06a7a
+[NotebookApp | INFO] Kernel shutdown: 39174ccb-af43-4c76-b2a3-2b053805f128
+[NotebookApp | INFO] Kernel shutdown: b8a48c0f-0ac4-4921-8cd2-b35796ce639d
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8889/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the assignment_list nbgrader serverextension
+[NotebookApp | INFO] ✓ nbpresent HTML export ENABLED
+[NotebookApp | WARNING] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] [nb_anacondacloud] enabled
+[NotebookApp | INFO] [nb_conda] enabled
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/annettesalmeen/Documents/2018-2019/HUMBIO51/humbio51
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8889/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 56db3d25-9ca2-4cbe-852d-ab846cf16255
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 11.92ms referer=http://localhost:8889/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%204.ipynb
+[NotebookApp | WARNING] Notebook class_08_Principal_Component_Analysis/8- Principal Component Analysis.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 78baa6ae-d9ec-4e02-ac83-95724e58bf04
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 4.27ms referer=http://localhost:8889/notebooks/class_08_Principal_Component_Analysis/8-%20Principal%20Component%20Analysis.ipynb
+[NotebookApp | INFO] Kernel started: 9ad751e3-286a-40f5-8d6e-b51c708efada
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-GeneSampleSelect.png (::1) 1.95ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.39ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-StartingDataFiles.png (::1) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.62ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 0.94ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transposeRNA.png (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 1.26ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.56ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.04ms referer=http://localhost:8889/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Kernel shutdown: 9ad751e3-286a-40f5-8d6e-b51c708efada
+[NotebookApp | INFO] Kernel started: 55fb5b45-89e7-4952-9d0f-51bb01c491a3
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-GeneSampleSelect.png (::1) 2.77ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-Indexing_Selecting%20Rows%20and%20Columns%202.png (::1) 1.30ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-StartingDataFiles.png (::1) 1.23ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/6-Tables-CSV-TSV.png (::1) 1.89ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transpose.png (::1) 1.20ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-transposeRNA.png (::1) 1.25ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7_merging_merge_on_key.png (::1) 2.30ms
+[NotebookApp | INFO] 302 GET /notebooks/Images/7-RNASeq_merged.png (::1) 1.35ms
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 3.90ms referer=http://localhost:8889/notebooks/class_07_RNAseq_quantification_variation/7-RNAseq%20quantification%20variation.ipynb
+[NotebookApp | INFO] Saving file at /class_08_Principal_Component_Analysis/8- Principal Component Analysis.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Kernel shutdown: 78baa6ae-d9ec-4e02-ac83-95724e58bf04
+[NotebookApp | INFO] Kernel shutdown: 56db3d25-9ca2-4cbe-852d-ab846cf16255
+[NotebookApp | INFO] Kernel shutdown: 55fb5b45-89e7-4952-9d0f-51bb01c491a3
+[NotebookApp | WARNING] Notebook Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 8d9bbd7a-14ba-4f56-8a8a-6603f5d1994e
+[NotebookApp | WARNING] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (::1) 6.49ms referer=http://localhost:8889/notebooks/Weekly%20Assignments/HUMBIO51%20Assignment%20Week%204.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] Saving file at /Weekly Assignments/HUMBIO51 Assignment Week 4.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: 8d9bbd7a-14ba-4f56-8a8a-6603f5d1994e
