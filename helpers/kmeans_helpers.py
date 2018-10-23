@@ -285,10 +285,6 @@ def scikit_silhouette(data,n_clusters):
 
     plt.show()
 
-def plot_heatmap(data):
-    import seaborn as sns;
-    sns.set(color_codes=False)
-    g = sns.clustermap(data)
     
     
 def get_genes_from_clusters(data,clusters,k,filename):
