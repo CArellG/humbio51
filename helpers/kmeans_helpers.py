@@ -160,6 +160,7 @@ def update_centroids(x,y,cluster_assignments,k):
 
 
 def scikit_kmeans(data,n_clusters,xlabel,ylabel,plottitle):
+    from matplotlib import pyplot as plt 
     np.random.seed(1234) 
     reduced_data = PCA(n_components=2).fit_transform(data)
     # Step size of the mesh. Decrease to increase the quality of the VQ.
