@@ -1,11 +1,7 @@
-import warnings
-warnings.filterwarnings("ignore")
 import random
 import numpy as np
-import math
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm 
+import numpy as np
+import math 
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score,silhouette_samples
@@ -50,34 +46,45 @@ def plot(x_coords,
     #Figure out the colors to use for plotting. 
     num_points=len(x_coords)
     colors=get_color_assignments(cluster_assignments,num_points)
-    cur_data=pd.DataFrame({'x':x_coords,
-                           'y':y_coords,
-                           'colors':colors})
-    if x_centroids==None:
-        (ggplot(cur_data,
-                aes(x="x",
-                    y="y"))
-         +geom_point(color=colors)
-         +xlab("A")
-         +ylab("B")
-         +guides(color=False)).draw() 
-    else:
+    
+    datasets=[] 
+    
+    #Define the x and y values for the scatter plot
+    trace=Scatter(
+        x=x_coords,
+        y=y_coords,
+        mode="markers",
+        marker=Marker(color=colors,size=15))
+    datasets.append(trace)
+    
+    #Optionally,also plot the centroids 
+    if x_centroids!=None: 
         num_clusters=len(x_centroids)
-        centroids=pd.DataFrame({'x_centroids':x_centroids,
-                                'y_centroids':y_centroids,
-                                'colors_centroids':color_options[0:num_clusters]})
-        (ggplot(cur_data,
-                aes(x="x",
-                    y="y"))
-         +geom_point(color=colors)
-         +geom_point(centroids,aes(x='x_centroids',
-                                   y='y_centroids'),
-                     color=centroids['colors_centroids'],
-                     shape='x',
-                     size=15)
-         +xlab("A")
-         +ylab("B")
-         +guides(color=False)).draw() 
+        centroid=Scatter(
+        x=x_centroids,
+        y=y_centroids,
+        mode="markers",
+        marker=Marker(color=color_options[0:num_clusters],
+                    symbol='x',
+                    size=22))
+        datasets.append(centroid)
+    data=Data(datasets)
+    
+    #Label the axes
+    layout = Layout(
+        xaxis=dict(
+            title='A',
+        ),
+        yaxis=dict(
+            title='B',
+        ),
+        showlegend=False
+    )
+    
+    #Draw the figure 
+    fig=Figure(data=data,layout=layout)
+    plotly.offline.iplot(fig)
+
 
 def initialize_centroids(k,min_val,max_val):
     '''
@@ -153,6 +160,7 @@ def update_centroids(x,y,cluster_assignments,k):
 
 
 def scikit_kmeans(data,n_clusters,xlabel,ylabel,plottitle):
+    from matplotlib import pyplot as plt 
     np.random.seed(1234) 
     reduced_data = PCA(n_components=2).fit_transform(data)
     # Step size of the mesh. Decrease to increase the quality of the VQ.
@@ -200,7 +208,6 @@ def scikit_kmeans(data,n_clusters,xlabel,ylabel,plottitle):
 
 def scikit_silhouette(data,n_clusters): 
     reduced_data = PCA(n_components=2).fit_transform(data)
-    from matplotlib import pyplot as plt
     # Create a subplot with 1 row and 2 columns
     fig, (ax1, ax2) = plt.subplots(1, 2)
     fig.set_size_inches(18, 7)
@@ -285,6 +292,10 @@ def scikit_silhouette(data,n_clusters):
 
     plt.show()
 
+def plot_heatmap(data):
+    import seaborn as sns;
+    sns.set(color_codes=False)
+    g = sns.clustermap(data)
     
     
 def get_genes_from_clusters(data,clusters,k,filename):
