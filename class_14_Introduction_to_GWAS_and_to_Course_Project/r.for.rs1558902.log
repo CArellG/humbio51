@@ -1,0 +1,27 @@
+PLINK v1.90b4.10 64-bit (3 Nov 2017)
+Options in effect:
+  --bfile /opt/data/project/1kg_phase1_all
+  --ld-snp rs1558902
+  --out r.for.rs1558902
+  --r
+  --threads 10
+
+Hostname: instance-master
+Working directory: /opt/humbio51/class_15_Introduction_to_Course_Project
+Start time: Tue Nov 14 17:57:17 2017
+
+Random number seed: 1510682237
+7484 MB RAM detected; reserving 3742 MB for main workspace.
+39728178 variants loaded from .bim file.
+1092 people (525 males, 567 females) loaded from .fam.
+Using up to 10 threads (change this with --threads).
+Before main variant filters, 1083 founders and 9 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 855 het. haploid genotypes present (see r.for.rs1558902.hh ); many
+commands treat these as missing.
+Total genotyping rate is 0.999956.
+39728178 variants and 1092 people pass filters and QC.
+Note: No phenotypes present.
+--r to r.for.rs1558902.ld ... done.
+
+End time: Tue Nov 14 18:00:39 2017
