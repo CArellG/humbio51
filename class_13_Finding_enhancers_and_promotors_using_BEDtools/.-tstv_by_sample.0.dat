@@ -1,0 +1,2 @@
+# [1]Sample ID	[2]ts/tv	[3]het/hom	[4]nSNPs	[5]nIndels	[6]Average depth	[7]nSingletons	[8]Sample name
+0	1.066667	30.000000	31	8	0.000000	39	output.sorted.bam
