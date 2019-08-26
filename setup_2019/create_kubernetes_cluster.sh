@@ -15,10 +15,9 @@
 #  --clusterrole=cluster-admin \
 #  --user=annashch@stanford.edu
 
-##setup helm & tiller
+##setup helm & tiller -- to install/uninstall easily,  refer here: https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7
 
 #curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-#helm init --upgrade
 #kubectl --namespace kube-system create serviceaccount tiller
 #kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 #helm init --service-account tiller --wait
@@ -31,10 +30,20 @@
 #helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
 #helm repo update
 
-export RELEASE=jhub
-export NAMESPACE=jhub
+#export RELEASE=jhub
+#export NAMESPACE=jhub
 
-helm upgrade --install $RELEASE jupyterhub/jupyterhub \
-     --namespace $NAMESPACE  \
-     --version 0.8.2 \
-     --values config.yaml
+#helm upgrade --install $RELEASE jupyterhub/jupyterhub \
+#     --namespace $NAMESPACE  \
+#     --version 0.8.2 \
+#     --values config.yaml
+
+
+##Your release is named jhub and installed into the namespace jhub.
+##You can find if the hub and proxy is ready by doing:
+## kubectl --namespace=jhub get pod
+## and watching for both those pods to be in status 'Ready'.
+## You can find the public IP of the JupyterHub by doing:
+## kubectl --namespace=jhub get svc proxy-public
+## It might take a few minutes for it to appear!
+kubectl config set-context $(kubectl config current-context) --namespace ${NAMESPACE:-jhub}

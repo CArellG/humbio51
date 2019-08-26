@@ -1,2 +1,20 @@
 proxy:
-  secretToken: "d1b55f29d061c3f0823b50df219f60c185bf08a0625114e26d5972c393d5c20c"
+  secretToken: "4c06e39d620c54ee78319a6ac36a4d168bd7b829b79d76aeb414de4877ba9bea"
+singleuser:
+  defaultUrl: "/lab"
+
+hub:
+  extraConfig:
+    jupyterlab: |
+      c.Spawner.cmd = ['jupyter-labhub']
+cull:
+  enabled: false
+
+auth:
+  admin:
+    users:
+      - annashch
+      - akundaje
+      - asalmeen
+      - soumyak
+      
