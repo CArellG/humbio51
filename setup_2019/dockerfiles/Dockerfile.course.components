@@ -1,0 +1,47 @@
+FROM jupyter/scipy-notebook
+MAINTAINER Kundaje Lab <annashch@stanford.edu>
+# Update Ubuntu Software repository
+USER root
+
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
+RUN apt-get -y upgrade
+RUN apt-get install -y libbz2-dev zlib1g-dev libncurses5-dev libncursesw5-dev liblzma-dev zlib1g-dev gcc
+RUN apt-get install -y  samtools bedtools  
+
+#course management 
+USER jovyan
+RUN pip install jupyterhub-ltiauthenticator
+RUN conda install -c conda-forge nbgitpuller
+RUN conda install -c conda-forge nbgrader
+RUN jupyter nbextension install --sys-prefix --py nbgrader --overwrite
+RUN jupyter nbextension enable --sys-prefix --py nbgrader
+RUN jupyter serverextension enable --sys-prefix --py nbgrader
+
+#Bio tools
+RUN conda install -c bioconda pysam 
+RUN conda install --channel conda-forge --channel bioconda bedtools htslib
+RUN conda install --channel conda-forge --channel bioconda pybedtools
+RUN conda install -c conda-forge plotnine 
+
+
+USER root
+RUN echo 'root:humbio51'|chpasswd
+RUN echo 'jovyan:humbio51'|chpasswd
+RUN sed -i.bak -e 's/#%admin/%admin/' /etc/sudoers
+RUN sed -i.bak -e 's/#%sudo/%sudo/' /etc/sudoers
+RUN usermod -aG sudo jovyan
+RUN chmod 0440 /etc/sudoers
+RUN chgrp -R root /home/$NB_USER \
+    && find /home/$NB_USER -type d -exec chmod g+rwx,o+rx {} \; \
+    && find /home/$NB_USER -type f -exec chmod g+rw {} \; \
+    && chgrp -R root /opt/conda \
+    && find /opt/conda -type d -exec chmod g+rwx,o+rx {} \; \
+    && find /opt/conda -type f -exec chmod g+rw {} \;
+
+ENV HOME /home/$NB_USER
+
+RUN mkdir /data
+RUN chmod 755 /data
+
+USER 1000

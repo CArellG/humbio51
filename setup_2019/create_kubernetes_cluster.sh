@@ -2,17 +2,18 @@
 ##https://zero-to-jupyterhub.readthedocs.io/en/stable/index.html
 
 #gcloud auth login
+#gcloud auth application-default login
 #gcloud config set project gbsc-gcp-class-humbio51-aut19
 
 #gcloud container clusters create \
 #  --machine-type n1-standard-4 \
-#  --num-nodes 2 \
+#  --num-nodes 1 \
 #  --zone us-central1-b \
 #  --cluster-version latest \
 #  humbio51-2019
 
 #kubectl create clusterrolebinding cluster-admin-binding \
-#  --clusterrole=cluster-admin \
+#   --clusterrole=cluster-admin \
 #  --user=annashch@stanford.edu
 
 ##setup helm & tiller -- to install/uninstall easily,  refer here: https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7
@@ -30,13 +31,11 @@
 #helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
 #helm repo update
 
-#export RELEASE=jhub
-#export NAMESPACE=jhub
-
-#helm upgrade --install $RELEASE jupyterhub/jupyterhub \
-#     --namespace $NAMESPACE  \
-#     --version 0.8.2 \
-#     --values config.yaml
+export RELEASE=jhub
+export NAMESPACE=jhub
+helm upgrade --install $RELEASE jupyterhub/jupyterhub \
+     --namespace $NAMESPACE  \
+     --values config.yaml
 
 
 ##Your release is named jhub and installed into the namespace jhub.
@@ -46,4 +45,4 @@
 ## You can find the public IP of the JupyterHub by doing:
 ## kubectl --namespace=jhub get svc proxy-public
 ## It might take a few minutes for it to appear!
-kubectl config set-context $(kubectl config current-context) --namespace ${NAMESPACE:-jhub}
+#kubectl config set-context $(kubectl config current-context) --namespace ${NAMESPACE:-jhub}
