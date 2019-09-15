@@ -58,7 +58,7 @@ RUN useradd -m -s /bin/bash -N -u $NB_UID $NB_USER && \
     fix-permissions $HOME && \
     fix-permissions "$(dirname $CONDA_DIR)"
 
-RUN usermod -aG sudo $NB_USER
+
 
 USER $NB_UID
 WORKDIR $HOME
@@ -115,19 +115,6 @@ RUN conda install --quiet --yes \
 
 USER root
 EXPOSE 8888
-
-# Configure container startup
-ENTRYPOINT ["tini", "-g", "--"]
-CMD ["start-notebook.sh"]
-
-# Add local files as late as possible to avoid cache busting
-COPY start.sh /usr/local/bin/
-COPY start-notebook.sh /usr/local/bin/
-COPY start-singleuser.sh /usr/local/bin/
-COPY jupyter_notebook_config.py /etc/jupyter/
-RUN chmod +x /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start-notebook.sh
-RUN chmod +x /usr/local/bin/start-singleuser.sh
 
 # Fix permissions on /etc/jupyter as root
 RUN fix-permissions /etc/jupyter/
@@ -229,6 +216,11 @@ USER root
 RUN mkdir /data
 RUN chmod 755 /data
 
+USER root
+RUN echo 'root:humbio51'|chpasswd
+RUN echo 'jovyan:humbio51'|chpasswd
+RUN usermod -aG sudo $NB_USER
+
 #course management 
 USER $NB_UID
 RUN pip install jupyterhub-ltiauthenticator
@@ -245,8 +237,17 @@ RUN conda install --channel conda-forge --channel bioconda pybedtools
 RUN conda install -c conda-forge plotnine 
 
 USER root
-RUN echo 'root:humbio51'|chpasswd
-RUN echo 'jovyan:humbio51'|chpasswd
-RUN sed -i.bak -e 's/#%admin/%admin/' /etc/sudoers
-RUN sed -i.bak -e 's/#%sudo/%sudo/' /etc/sudoers
-RUN chmod 0440 /etc/sudoers
+
+# Configure container startup
+ENTRYPOINT ["tini", "-g", "--"]
+CMD ["start-notebook.sh"]
+
+# Add local files as late as possible to avoid cache busting
+COPY start.sh /usr/local/bin/
+COPY start-notebook.sh /usr/local/bin/
+COPY start-singleuser.sh /usr/local/bin/
+COPY jupyter_notebook_config.py /etc/jupyter/
+RUN chmod +x /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start-notebook.sh
+RUN chmod +x /usr/local/bin/start-singleuser.sh
+

@@ -1,34 +1,32 @@
 proxy:
-  secretToken: "4c06e39d620c54ee78319a6ac36a4d168bd7b829b79d76aeb414de4877ba9bea"
+  secretToken: "a9d95455a8e49391ac7f5384803fe2d415ec50c835bb47398ec99d8baf7f966f"
   https:
     hosts:
-      - humbio51.net
+      - instructor.humbio51.net
     letsencrypt:
       contactEmail: 'annashcherbina@gmail.com'
   service:
-    loadBalancerIP: 35.239.194.45
-    
+    loadBalancerIP: 34.70.187.230
+
+
 singleuser:
-  cpu:
-    limit: 4
-    guarantee: 1
-  memory:
-    limit: 4G
-    guarantee: 512M
   defaultUrl: "/lab"
   image:
     name: kundajelab/humbio51
     tag: d0049b9d1de1
+  lifecycleHooks:
+    postStart:
+      exec:
+        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "master", "humbio51"]
   storage:
     extraVolumes:
       - name: humbio51-data-disk
         persistentVolumeClaim:
           claimName: humbio51-data-disk
-          readOnly: true
+          #readOnly: true
     extraVolumeMounts:
       - name: humbio51-data-disk
-        mountPath: /data
-               
+        mountPath: /data        
 hub:
   extraConfig:
     jupyterlab: |
@@ -39,19 +37,21 @@ ingress:
     kubernetes.io/tls-acme: "true"
   tls:
    - hosts:
-      - humbio51.net
+      - instructor.humbio51.net
      secretName: kubelego-tls-jupyterhub
- 
 auth:
-  type: lti
-  lti:
-    consumers:
-      c5a9d574fba4b6aa7088df10e48e806d076a2cab57e17f0b93fedd2c3f18b6b8: 447c43cc59e3e465e43a00ba6f1ee4f5445c2aee5cd56ae622e0bd1039d60bd5
+  type: github
+  github:
+    clientId: eaa6c2a265ba334781aa
+    clientSecret: d1bd12a065ed46b916e7a5540b298775df533eab
+    callbackUrl: https://instructor.humbio51.net/hub/oauth_callback
   admin:
-    users:
-      ["30481","14552"]
     access: true
-
+    users:
+      - annashcherbina
+      - asalmeen
+      - akundaje
+      - soumyak
 cull:
   enabled: true
   timeout: 3600
