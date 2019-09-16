@@ -13,7 +13,7 @@ singleuser:
   defaultUrl: "/lab"
   image:
     name: kundajelab/humbio51
-    tag: d0049b9d1de1
+    tag: eb5c0a2e27fb
   lifecycleHooks:
     postStart:
       exec:

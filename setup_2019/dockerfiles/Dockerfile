@@ -116,6 +116,20 @@ RUN conda install --quiet --yes \
 USER root
 EXPOSE 8888
 
+# Configure container startup
+ENTRYPOINT ["tini", "-g", "--"]
+CMD ["start-notebook.sh"]
+
+# Add local files as late as possible to avoid cache busting
+COPY start.sh /usr/local/bin/
+COPY start-notebook.sh /usr/local/bin/
+COPY start-singleuser.sh /usr/local/bin/
+COPY jupyter_notebook_config.py /etc/jupyter/
+RUN chmod +x /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start-notebook.sh
+RUN chmod +x /usr/local/bin/start-singleuser.sh
+
+
 # Fix permissions on /etc/jupyter as root
 RUN fix-permissions /etc/jupyter/
 
@@ -237,17 +251,5 @@ RUN conda install --channel conda-forge --channel bioconda pybedtools
 RUN conda install -c conda-forge plotnine 
 
 USER root
-
-# Configure container startup
-ENTRYPOINT ["tini", "-g", "--"]
-CMD ["start-notebook.sh"]
-
-# Add local files as late as possible to avoid cache busting
-COPY start.sh /usr/local/bin/
-COPY start-notebook.sh /usr/local/bin/
-COPY start-singleuser.sh /usr/local/bin/
-COPY jupyter_notebook_config.py /etc/jupyter/
-RUN chmod +x /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start-notebook.sh
-RUN chmod +x /usr/local/bin/start-singleuser.sh
-
+RUN apt-get update 
+RUN apt-get install -y openssh-server
