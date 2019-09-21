@@ -15,7 +15,6 @@ singleuser:
   memory:
     limit: 4G
     guarantee: 512M
-  defaultUrl: "/lab"
   image:
     name: kundajelab/humbio51
     tag: eb5c0a2e27fb

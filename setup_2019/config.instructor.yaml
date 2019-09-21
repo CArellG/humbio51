@@ -17,7 +17,8 @@ singleuser:
   lifecycleHooks:
     postStart:
       exec:
-        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "master", "humbio51"]
+        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "master", "humbio51_instructor"]
+        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "student","humbio51_student"]
   storage:
     extraVolumes:
       - name: humbio51-data-disk
