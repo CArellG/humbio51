@@ -14,11 +14,16 @@ singleuser:
   image:
     name: kundajelab/humbio51
     tag: eb5c0a2e27fb
-  lifecycleHooks:
+  lifecycle:
     postStart:
       exec:
-        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "master", "humbio51_instructor"]
-        command: ["gitpuller", "https://github.com/kundajelab/humbio51", "student","humbio51_student"]
+        command:
+          - "sh"
+          - "-c"
+          - >
+            gitpuller https://github.com/kundajelab/humbio51 master humbio51_instructor;
+            gitpuller https://github.com/kundajelab/humbio51 student humbio51_student
+            
   storage:
     extraVolumes:
       - name: humbio51-data-disk
