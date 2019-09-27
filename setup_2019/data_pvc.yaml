@@ -4,7 +4,7 @@ metadata:
   name: humbio51-data-disk
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadOnlyMany
   resources:
     requests:
       storage: 20Gi
