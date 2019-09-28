@@ -32,14 +32,6 @@ singleuser:
     tag: eb5c0a2e27fb
   storage:
     capacity: 5Gi
-    extraVolumes:
-      - name: humbio51-data-disk
-        persistentVolumeClaim:
-          claimName: humbio51-data-disk
-          #readOnly: true
-    extraVolumeMounts:
-      - name: humbio51-data-disk
-        mountPath: /data        
 hub:
   extraConfig:
     jupyterlab: |
