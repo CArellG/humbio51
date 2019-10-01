@@ -23,15 +23,6 @@ singleuser:
           - >
             gitpuller https://github.com/kundajelab/humbio51 master humbio51_instructor;
             gitpuller https://github.com/kundajelab/humbio51 student humbio51_student            
-  storage:
-    extraVolumes:
-      - name: humbio51-data-disk
-        persistentVolumeClaim:
-          claimName: humbio51-data-disk
-          #readOnly: true
-    extraVolumeMounts:
-      - name: humbio51-data-disk
-        mountPath: /data        
 hub:
   extraConfig:
     jupyterlab: |
