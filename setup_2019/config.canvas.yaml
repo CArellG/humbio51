@@ -7,39 +7,35 @@ proxy:
       contactEmail: 'annashcherbina@gmail.com'
   service:
     loadBalancerIP: 35.239.194.45
+
+scheduling:
+  userScheduler:
+    enabled: true
+  podPriority:
+    enabled: true
+  userPlaceholder:
+    enabled: true
+    replicas: 4
+  userPods:
+    nodeAffinity:
+      matchNodePurpose: require
     
 singleuser:
   cpu:
-    limit: 4
-    guarantee: 1
+    limit: 3
+    guarantee: 0
   memory:
-    limit: 4G
+    limit: 1G
     guarantee: 512M
   image:
     name: kundajelab/humbio51
     tag: eb5c0a2e27fb
   storage:
-    extraVolumes:
-      - name: humbio51-data-disk
-        persistentVolumeClaim:
-          claimName: humbio51-data-disk
-          readOnly: true
-    extraVolumeMounts:
-      - name: humbio51-data-disk
-        mountPath: /data
-               
+    capacity: 5Gi
 hub:
   extraConfig:
     jupyterlab: |
       c.Spawner.cmd = ['jupyter-labhub']
-
-ingress:
-  annotations:
-    kubernetes.io/tls-acme: "true"
-  tls:
-   - hosts:
-      - humbio51.net
-     secretName: kubelego-tls-jupyterhub
  
 auth:
   type: lti
@@ -48,7 +44,7 @@ auth:
       c5a9d574fba4b6aa7088df10e48e806d076a2cab57e17f0b93fedd2c3f18b6b8: 447c43cc59e3e465e43a00ba6f1ee4f5445c2aee5cd56ae622e0bd1039d60bd5
   admin:
     users:
-      ["30481","14552"]
+      ["30481","14552", "183448"]
     access: true
 
 cull:

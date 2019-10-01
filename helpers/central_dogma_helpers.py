@@ -9,18 +9,11 @@ def read_nt_from_fastasequence(FASTAsequence):
     return(nt_sequence)
 
 #write an RNA sequence from a DNA sequence
-
 def write_RNA_from_DNA(DNAsequence):
-    RNAsequence='' #this defines the variable 'complementarysequence'
-    for i in DNAsequence:
-        if i=='T':
-            RNAsequence=RNAsequence+'U'
-        else:
-            RNAsequence=RNAsequence+ i
+    RNAsequence=DNAsequence.replace('T','U')
     return(RNAsequence)
 
 #Write out the protein 1-letter amino acid from an mRNA sequence
-
 def write_protein_1_letter_aa_from_RNA(RNAsequence):
 
 #defines the python dictionary for the one letter genetic code 

@@ -1,5 +1,10 @@
 #openssl rand -hex 32
-## add secretToken to config.yaml
+## add secretToken to config.instructor.yaml
+
+kubectl create -f namespace_jhub_instructor.yaml
+kubectl get namespace
+kubectl --namespace jhub-instructor apply -f data_pvc.yaml 
+kubectl --namespace jhub-instructor get pvc
 
 export RELEASE=jhub-instructor
 export NAMESPACE=jhub-instructor

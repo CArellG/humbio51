@@ -22,17 +22,7 @@ singleuser:
           - "-c"
           - >
             gitpuller https://github.com/kundajelab/humbio51 master humbio51_instructor;
-            gitpuller https://github.com/kundajelab/humbio51 student humbio51_student
-            
-  storage:
-    extraVolumes:
-      - name: humbio51-data-disk
-        persistentVolumeClaim:
-          claimName: humbio51-data-disk
-          #readOnly: true
-    extraVolumeMounts:
-      - name: humbio51-data-disk
-        mountPath: /data        
+            gitpuller https://github.com/kundajelab/humbio51 student humbio51_student            
 hub:
   extraConfig:
     jupyterlab: |
@@ -64,6 +54,19 @@ auth:
       - asalmeen
       - akundaje
       - soumyakundu
+
+scheduling:
+  userScheduler:
+    enabled: true
+  podPriority:
+    enabled: true
+  userPlaceholder:
+    enabled: true
+    replicas: 4
+  userPods:
+    nodeAffinity:
+      matchNodePurpose: require
+      
 cull:
   enabled: true
   timeout: 3600
