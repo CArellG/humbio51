@@ -29,9 +29,18 @@ singleuser:
     guarantee: 512M
   image:
     name: kundajelab/humbio51
-    tag: eb5c0a2e27fb
+    tag: 9e5c90ba797d
   storage:
     capacity: 5Gi
+    extraVolumes:
+      - name: pv-claim-demo
+        persistentVolumeClaim:
+          claimName: pv-claim-demo
+          accessModes:
+            - ReadOnlyMany
+    extraVolumeMounts:
+      - name: pv-claim-demo
+        mountPath: /data
 hub:
   extraConfig:
     jupyterlab: |
