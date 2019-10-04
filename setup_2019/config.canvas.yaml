@@ -36,11 +36,13 @@ singleuser:
       - name: pv-claim-demo
         persistentVolumeClaim:
           claimName: pv-claim-demo
-          accessModes:
-            - ReadOnlyMany
+          readOnly: true
     extraVolumeMounts:
       - name: pv-claim-demo
         mountPath: /data
+        readOnly: true
+
+
 hub:
   extraConfig:
     jupyterlab: |

@@ -16,11 +16,12 @@ singleuser:
       - name: pv-claim-demo-2
         persistentVolumeClaim:
           claimName: pv-claim-demo-2
-          accessModes:
-            - ReadOnlyMany
+          readOnly: true
     extraVolumeMounts:
       - name: pv-claim-demo-2
         mountPath: /data
+        readOnly: true
+
   
   image:
     name: kundajelab/humbio51
