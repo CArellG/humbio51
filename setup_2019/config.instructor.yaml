@@ -11,9 +11,21 @@ proxy:
 
 singleuser:
   defaultUrl: "/lab"
+  storage:
+    extraVolumes:
+      - name: pv-claim-demo-2
+        persistentVolumeClaim:
+          claimName: pv-claim-demo-2
+          readOnly: true
+    extraVolumeMounts:
+      - name: pv-claim-demo-2
+        mountPath: /data
+        readOnly: true
+
+  
   image:
     name: kundajelab/humbio51
-    tag: eb5c0a2e27fb
+    tag: 9e5c90ba797d
   lifecycle:
     postStart:
       exec:
