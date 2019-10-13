@@ -25,7 +25,7 @@ singleuser:
   
   image:
     name: kundajelab/humbio51
-    tag: 9e5c90ba797d
+    tag: fe40ca7997f0
   lifecycle:
     postStart:
       exec:
