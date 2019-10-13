@@ -74,13 +74,13 @@ scheduling:
     enabled: true
   userPlaceholder:
     enabled: true
-    replicas: 4
+    replicas: 2
   userPods:
     nodeAffinity:
       matchNodePurpose: require
       
 cull:
   enabled: true
-  timeout: 3600
-  every: 300
+  timeout: 1800
+  every: 180
 
