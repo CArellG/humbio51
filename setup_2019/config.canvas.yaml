@@ -15,7 +15,7 @@ scheduling:
     enabled: true
   userPlaceholder:
     enabled: true
-    replicas: 4
+    replicas: 2
   userPods:
     nodeAffinity:
       matchNodePurpose: require
@@ -29,7 +29,7 @@ singleuser:
     guarantee: 512M
   image:
     name: kundajelab/humbio51
-    tag: 9e5c90ba797d
+    tag: fe40ca7997f0
   storage:
     capacity: 5Gi
     extraVolumes:
@@ -60,6 +60,6 @@ auth:
 
 cull:
   enabled: true
-  timeout: 3600
-  every: 300
+  timeout: 1800
+  every: 180
 

@@ -249,7 +249,15 @@ RUN conda install -c bioconda pysam
 RUN conda install --channel conda-forge --channel bioconda bedtools htslib
 RUN conda install --channel conda-forge --channel bioconda pybedtools
 RUN conda install -c conda-forge plotnine 
+RUN conda install -c bioconda bowtie2
+RUN conda install -c conda-forge biopython
+
 
 USER root
 RUN apt-get update 
 RUN apt-get install -y openssh-server
+RUN wget https://www.drive5.com/muscle/downloads3.8.31/muscle3.8.31_i86linux64.tar.gz
+RUN tar -xzvf muscle3.8.31_i86linux64.tar.gz
+RUN mv muscle3.8.31_i86linux64 muscle
+RUN mv muscle /usr/bin/muscle
+RUN chmod 775 /usr/bin/muscle
