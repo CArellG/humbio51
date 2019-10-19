@@ -1,13 +1,11 @@
 import random
 import numpy as np
-import numpy as np
+import pandas as pd 
 import math 
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score,silhouette_samples
 from plotnine import * 
-import pdb
-
 
 red='#ff0000'
 black='#000000'
@@ -46,45 +44,20 @@ def plot(x_coords,
     #Figure out the colors to use for plotting. 
     num_points=len(x_coords)
     colors=get_color_assignments(cluster_assignments,num_points)
-    
-    datasets=[] 
-    
     #Define the x and y values for the scatter plot
-    trace=Scatter(
-        x=x_coords,
-        y=y_coords,
-        mode="markers",
-        marker=Marker(color=colors,size=15))
-    datasets.append(trace)
-    
-    #Optionally,also plot the centroids 
-    if x_centroids!=None: 
-        num_clusters=len(x_centroids)
-        centroid=Scatter(
-        x=x_centroids,
-        y=y_centroids,
-        mode="markers",
-        marker=Marker(color=color_options[0:num_clusters],
-                    symbol='x',
-                    size=22))
-        datasets.append(centroid)
-    data=Data(datasets)
-    
-    #Label the axes
-    layout = Layout(
-        xaxis=dict(
-            title='A',
-        ),
-        yaxis=dict(
-            title='B',
-        ),
-        showlegend=False
-    )
-    
-    #Draw the figure 
-    fig=Figure(data=data,layout=layout)
-    plotly.offline.iplot(fig)
+    data=pd.DataFrame({'x':x_coords,'y':y_coords,'cluster':colors})
 
+    if x_centroids is None:
+        return (ggplot(data,aes('x','y'))+
+                geom_point(color=colors))
+    else:
+        num_clusters=len(x_centroids)
+        centroids_data=pd.DataFrame({'x_centroids':x_centroids,'y_centroids':y_centroids})
+        return (ggplot(data)+
+                geom_point(aes('x_coords','y_coords'),color=colors)+
+                geom_point(centroids_data,aes('x_centroids','y_centroids'),shape='X',size=10,color=color_options[0:num_clusters])+
+                xlab('x')+
+                ylab('y'))
 
 def initialize_centroids(k,min_val,max_val):
     '''
