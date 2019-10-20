@@ -17,3 +17,4 @@ def format_alignment_linebreak(align1_linebreaks,align2_linebreaks,score,begin,e
     s.append("  End  =  %g\n" % end)
     s.append("  Length= %g\n" % (end-begin))
     return ''.join(s)
+
