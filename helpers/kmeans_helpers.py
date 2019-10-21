@@ -132,7 +132,7 @@ def update_centroids(x,y,cluster_assignments,k):
 
 
 
-def scikit_kmeans(data,n_clusters,xlabel,ylabel,plottitle):
+def scikit_PCAandkmeans(data,n_clusters,xlabel,ylabel,plottitle):
     from matplotlib import pyplot as plt 
     np.random.seed(1234) 
     reduced_data = PCA(n_components=2).fit_transform(data)
