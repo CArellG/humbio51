@@ -20,9 +20,7 @@ singleuser:
     extraVolumeMounts:
       - name: pv-claim-demo-2
         mountPath: /data
-        readOnly: true
-
-  
+        readOnly: true  
   image:
     name: kundajelab/humbio51
     tag: fe40ca7997f0

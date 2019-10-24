@@ -21,12 +21,6 @@ scheduling:
       matchNodePurpose: require
     
 singleuser:
-  cpu:
-    limit: 3
-    guarantee: 0
-  memory:
-    limit: 1G
-    guarantee: 512M
   image:
     name: kundajelab/humbio51
     tag: fe40ca7997f0
