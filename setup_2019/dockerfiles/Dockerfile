@@ -251,6 +251,7 @@ RUN conda install --channel conda-forge --channel bioconda pybedtools
 RUN conda install -c conda-forge plotnine 
 RUN conda install -c bioconda bowtie2
 RUN conda install -c conda-forge biopython
+RUN conda install -c bioconda goatools
 
 
 USER root

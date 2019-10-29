@@ -23,7 +23,7 @@ singleuser:
         readOnly: true  
   image:
     name: kundajelab/humbio51
-    tag: fe40ca7997f0
+    tag: 7dbd3127232c
   lifecycle:
     postStart:
       exec:
