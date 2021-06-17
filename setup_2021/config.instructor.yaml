@@ -1,0 +1,70 @@
+proxy:
+  https:
+    enabled: false
+    hosts:
+      - instructor.humbio51.net
+    letsencrypt:
+      contactEmail: 'annashcherbina@gmail.com'
+  service:
+    loadBalancerIP: 34.70.190.43
+
+
+singleuser:
+  defaultUrl: "/lab"
+  storage:
+    extraVolumes:
+      - name: humbio51-data-disk-instructor
+        persistentVolumeClaim:
+          claimName: humbio51-data-instructor-pvc
+          readOnly: true
+    extraVolumeMounts:
+      - name: humbio51-data-disk-instructor
+        mountPath: /data
+        readOnly: true  
+  image:
+    name: kundajelab/humbio51
+    tag: latest
+hub:
+  extraConfig:
+    jupyterlab: |
+      c.Spawner.cmd = ['jupyter-labhub']
+hub:
+  config:
+    Authenticator:
+      admin_users:
+      - annashcherbina
+      - asalmeen
+      - akundaje
+      - soumyakundu
+      allowed_users:
+      - annashcherbina
+      - asalmeen
+      - akundaje
+      - soumyakundu
+      auto_login: true
+    GitHubOAuthenticator:
+      client_id: eaa6c2a265ba334781aa
+      client_secret: d1bd12a065ed46b916e7a5540b298775df533eab
+      oauth_callback_url: http://instructor.humbio51.net/hub/oauth_callback      
+    JupyterHub:
+      admin_access: true
+      authenticator_class: github
+
+
+scheduling:
+  userScheduler:
+    enabled: true
+  podPriority:
+    enabled: true
+  userPlaceholder:
+    enabled: true
+    replicas: 2
+  userPods:
+    nodeAffinity:
+      matchNodePurpose: require
+      
+cull:
+  enabled: true
+  timeout: 1800
+  every: 180
+

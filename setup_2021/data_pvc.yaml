@@ -1,11 +1,13 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: humbio51-data-disk
+  name: humbio51-data-pvc
+  namespace: jhub
 spec:
+  storageClassName: ""
+  volumeName: humbio51-data-pv 
   accessModes:
     - ReadOnlyMany
   resources:
     requests:
-      storage: 20Gi
-    
+      storage: 40G

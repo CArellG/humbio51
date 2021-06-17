@@ -1,12 +1,13 @@
 proxy:
-  secretToken: "4c06e39d620c54ee78319a6ac36a4d168bd7b829b79d76aeb414de4877ba9bea"
+  secretToken: "cdc823015efcd715b435a79f467aba5ffbd56fa6caa53f0a9abee0fe361eacc9"
   https:
+    enabled: false
     hosts:
       - humbio51.net
     letsencrypt:
       contactEmail: 'annashcherbina@gmail.com'
   service:
-    loadBalancerIP: 35.239.194.45
+    loadBalancerIP: 35.222.2.245
 
 scheduling:
   userScheduler:
@@ -23,16 +24,16 @@ scheduling:
 singleuser:
   image:
     name: kundajelab/humbio51
-    tag: 7dbd3127232c
+    tag: 27e5cd14b700
   storage:
     capacity: 5Gi
     extraVolumes:
-      - name: pv-claim-demo
+      - name: humbio51-data-pvc
         persistentVolumeClaim:
-          claimName: pv-claim-demo
+          claimName: humbio51-data-pvc
           readOnly: true
     extraVolumeMounts:
-      - name: pv-claim-demo
+      - name: humbio51-data-pvc
         mountPath: /data
         readOnly: true
 
@@ -41,7 +42,8 @@ hub:
   extraConfig:
     jupyterlab: |
       c.Spawner.cmd = ['jupyter-labhub']
- 
+
+
 auth:
   type: lti
   lti:
@@ -52,6 +54,8 @@ auth:
       ["30481","14552", "183448"]
     access: true
 
+
+      
 cull:
   enabled: true
   timeout: 1800
