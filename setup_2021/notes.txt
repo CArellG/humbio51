@@ -21,3 +21,9 @@ To get full information about the JupyterHub proxy service run:
   kubectl --namespace=jhub get svc proxy-public
 
 
+
+DEBUG:
+kubectl get events -n jhub
+
+for pods stuck in pending: 
+https://discourse.jupyter.org/t/singleuser-pods-stuck-in-pending/6349/8

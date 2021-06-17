@@ -11,7 +11,7 @@ proxy:
 
 scheduling:
   userScheduler:
-    enabled: true
+    enabled: false
   podPriority:
     enabled: true
   userPlaceholder:
@@ -20,11 +20,11 @@ scheduling:
   userPods:
     nodeAffinity:
       matchNodePurpose: require
-    
+        
 singleuser:
   image:
     name: kundajelab/humbio51
-    tag: 27e5cd14b700
+    tag: f49ba135ae2a
   storage:
     capacity: 5Gi
     extraVolumes:
@@ -43,7 +43,6 @@ hub:
     jupyterlab: |
       c.Spawner.cmd = ['jupyter-labhub']
 
-
 auth:
   type: lti
   lti:
@@ -53,8 +52,6 @@ auth:
     users:
       ["30481","14552", "183448"]
     access: true
-
-
       
 cull:
   enabled: true

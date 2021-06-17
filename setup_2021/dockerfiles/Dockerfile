@@ -152,9 +152,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Add local files as late as possible to avoid cache busting
-RUN echo "WHAT THE FUCK!!!!" 
+
 COPY jupyter_notebook_config.py /etc/jupyter/
-RUN echo "PLEASE COPY" 
 COPY start.sh /usr/local/bin/
 COPY start-notebook.sh /usr/local/bin/
 COPY start-singleuser.sh /usr/local/bin/
