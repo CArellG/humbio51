@@ -14,7 +14,7 @@ RUN apt-get -y upgrade
 RUN apt-get -y update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
-RUN apt-get install -y libbz2-dev zlib1g-dev libncurses5-dev libncursesw5-dev liblzma-dev zlib1g-dev gcc
+RUN apt-get install -y libbz2-dev zlib1g-dev libncurses5-dev libncursesw5-dev liblzma-dev zlib1g-dev gcc bowtie2
 
 # Install all OS dependencies for notebook server that starts but lacks all
 # features (e.g., download as all possible file formats)
@@ -120,18 +120,6 @@ EXPOSE 8888
 ENTRYPOINT ["tini", "-g", "--"]
 CMD ["start-notebook.sh"]
 
-# Add local files as late as possible to avoid cache busting
-COPY start.sh /usr/local/bin/
-COPY start-notebook.sh /usr/local/bin/
-COPY start-singleuser.sh /usr/local/bin/
-COPY jupyter_notebook_config.py /etc/jupyter/
-RUN chmod +x /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start-notebook.sh
-RUN chmod +x /usr/local/bin/start-singleuser.sh
-
-
-# Fix permissions on /etc/jupyter as root
-RUN fix-permissions /etc/jupyter/
 
 # Install all OS dependencies for fully functional notebook server
 RUN apt-get update && apt-get install -yq --no-install-recommends \
@@ -162,6 +150,23 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ffmpeg && \
     rm -rf /var/lib/apt/lists/*
+
+# Add local files as late as possible to avoid cache busting
+RUN echo "WHAT THE FUCK!!!!" 
+COPY jupyter_notebook_config.py /etc/jupyter/
+RUN echo "PLEASE COPY" 
+COPY start.sh /usr/local/bin/
+COPY start-notebook.sh /usr/local/bin/
+COPY start-singleuser.sh /usr/local/bin/
+RUN chmod +x /etc/jupyter/jupyter_notebook_config.py
+RUN chmod +x /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start-notebook.sh
+RUN chmod +x /usr/local/bin/start-singleuser.sh
+
+
+# Fix permissions on /etc/jupyter as root
+RUN fix-permissions /etc/jupyter/
+
 
 USER $NB_UID
 
@@ -198,9 +203,6 @@ RUN conda install --quiet --yes \
     jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
     # Also activate ipywidgets extension for JupyterLab
     # Check this URL for most recent compatibilities
-    # https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager@^1.0.1 --no-build && \
-    jupyter labextension install jupyterlab_bokeh@1.0.0 --no-build && \
     jupyter lab build --dev-build=False && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
@@ -239,19 +241,12 @@ RUN usermod -aG sudo $NB_USER
 USER $NB_UID
 RUN pip install jupyterhub-ltiauthenticator
 RUN conda install -c conda-forge nbgitpuller
-RUN conda install -c conda-forge nbgrader
-RUN jupyter nbextension install --sys-prefix --py nbgrader --overwrite
-RUN jupyter nbextension enable --sys-prefix --py nbgrader
-RUN jupyter serverextension enable --sys-prefix --py nbgrader
 
-#Bio tools
+#Bio tool
 RUN conda install -c bioconda pysam 
 RUN conda install --channel conda-forge --channel bioconda bedtools htslib
 RUN conda install --channel conda-forge --channel bioconda pybedtools
-RUN conda install -c conda-forge plotnine 
-RUN conda install -c bioconda bowtie2
-RUN conda install -c conda-forge biopython
-RUN conda install -c bioconda goatools
+RUN pip install plotnine biopython goatools 
 
 
 USER root

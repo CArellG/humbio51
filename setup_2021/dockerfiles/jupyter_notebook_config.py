@@ -11,6 +11,8 @@ c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.port = 8888
 c.NotebookApp.open_browser = False
+#c.JupyterHub.authenticator_class = 'ltiauthenticator.LTIAuthenticator'
+#c.LTIAuthenticator.consumers = {'c5a9d574fba4b6aa7088df10e48e806d076a2cab57e17f0b93fedd2c3f18b6b8':'447c43cc59e3e465e43a00ba6f1ee4f5445c2aee5cd56ae622e0bd1039d60bd5'}
 
 # https://github.com/jupyter/notebook/issues/3130
 c.FileContentsManager.delete_to_trash = False
@@ -53,3 +55,4 @@ distinguished_name = req_distinguished_name
 # the environment
 if 'NB_UMASK' in os.environ:
     os.umask(int(os.environ['NB_UMASK'], 8))
+

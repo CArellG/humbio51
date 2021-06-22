@@ -11,7 +11,7 @@ gcloud container clusters create \
   --zone us-central1-b \
   --cluster-version latest \
   --disk-size=40Gi \
-  humbio51-2019
+  humbio51-2021
 
 kubectl create clusterrolebinding cluster-admin-binding \
    --clusterrole=cluster-admin \
@@ -28,17 +28,8 @@ gcloud beta container node-pools create user-pool \
   --node-taints hub.jupyter.org_dedicated=user:NoSchedule \
   --zone us-central1-b \
   --disk-size=20Gi \
-  --cluster humbio51-2019
+  --cluster humbio51-2021
 
-
-##setup helm & tiller -- to install/uninstall easily,  refer here: https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7
-
-#curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-kubectl --namespace kube-system create serviceaccount tiller
-kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
-helm init --service-account tiller --wait
-#kubectl patch deployment tiller-deploy --namespace=kube-system --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
-#helm version
 
 ## Install jupyterhub
 #openssl rand -hex 32
@@ -46,16 +37,22 @@ helm init --service-account tiller --wait
 helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
 helm repo update
 
+#create namespace
+kubectl create -f namespace namespace.jhub.yaml
+kubectl get namespace
 
-#kubectl create -f namespace_jhub.yaml
-#kubectl get namespace
-#kubectl --namespace jhub apply -f data_pvc.yaml 
-#kubectl --namespace jhub get pvc
+#add data volume
+#note: first manually create a disk for data store, which is reference in data_pv.yaml
+kubectl --namespace jhub apply -f data_pv.yaml 
+kubectl --namespace jhub apply -f data_pvc.yaml 
+kubectl --namespace jhub get pvc
 
 export RELEASE=jhub
 export NAMESPACE=jhub
-helm upgrade --install $RELEASE jupyterhub/jupyterhub \
+#need 0.9.6
+helm upgrade --cleanup-on-fail --install $RELEASE jupyterhub/jupyterhub \
      --namespace $NAMESPACE  \
+     --version=0.9.6 \
      --values config.canvas.yaml
 
 
