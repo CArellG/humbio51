@@ -1,22 +1,4 @@
 
-def reverse_complement(seq):
-    seq=seq.upper()
-    seq=seq[::-1]
-    revcomp=""
-    for char in seq:
-        if char.upper()=="A":
-            revcomp=revcomp+"T"
-        elif char.upper()=="T":
-            revcomp=revcomp+"A"
-        elif char.upper()=="C":
-            revcomp=revcomp+"G"
-        elif char.upper()=="G":
-            revcomp=revcomp+"C"
-        else:
-            revcomp=revcomp+char
-    return revcomp
-        
-
 #read in a nucleotide (DNA or RNA) sequence from a FASTA sequence
 
 def read_nt_from_fastasequence(FASTAsequence):
@@ -28,13 +10,12 @@ def read_nt_from_fastasequence(FASTAsequence):
 
 #write an RNA sequence from a DNA sequence
 def write_RNA_from_DNA(DNAsequence):
-    DNAsequence=DNAsequence.upper() 
     RNAsequence=DNAsequence.replace('T','U')
     return(RNAsequence)
 
 #Write out the protein 1-letter amino acid from an mRNA sequence
 def write_protein_1_letter_aa_from_RNA(RNAsequence):
-    RNAsequence=RNAsequence.upper() 
+
 #defines the python dictionary for the one letter genetic code 
     geneticcode1let={'UUU':'F','UUC':'F','UUA':'L','UUG':'L',
      'CUU':'L','CUC':'L','CUA':'L','CUG':'L',
