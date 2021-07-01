@@ -1,0 +1,29 @@
+https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/readonlymany-disks
+
+
+Your release is named "jhub" and installed into the namespace "jhub".
+
+You can check whether the hub and proxy are ready by running:
+
+ kubectl --namespace=jhub get pod
+
+and watching for both those pods to be in status 'Running'.
+
+You can find the public (load-balancer) IP of JupyterHub by running:
+
+  kubectl -n jhub get svc proxy-public -o jsonpath='{.status.loadBalancer.ingress[].ip}'
+# 34.136.149.201
+
+It might take a few minutes for it to appear!
+
+To get full information about the JupyterHub proxy service run:
+
+  kubectl --namespace=jhub get svc proxy-public
+
+
+
+DEBUG:
+kubectl get events -n jhub
+
+for pods stuck in pending: 
+https://discourse.jupyter.org/t/singleuser-pods-stuck-in-pending/6349/8

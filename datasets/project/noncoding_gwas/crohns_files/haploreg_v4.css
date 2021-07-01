@@ -1,0 +1,100 @@
+body
+{
+font-family:sans-serif;
+font-size:1em;
+background-color:white;
+align:center;
+}
+
+h1 {font-size:2em;}
+h2 {font-size:1.5em;} 
+h3 {font-size:0.85em; font-weight:bold;}
+
+p {font-size:0.85em;} 
+
+.page
+{
+width:75%;
+min-width: 1080px;
+background-color:lightgreen;
+margin: 0 auto;
+padding: 10px;
+}
+
+table.optiontable{
+font-size:0.85em;
+
+}
+
+
+table.detailtable{
+border-style:none;
+border-collapse:collapse;
+border-color:gray;
+border-spacing:0px;
+border-width:1px;
+}
+
+table.detailtable td{
+font-size:0.75em;
+border-style:dotted;
+border-color:gray;
+border-width:1px;
+padding:3px;
+}
+
+.enhancer{
+background-color:Orange;
+}
+
+table.resulttable{
+width:95%;
+border-style:solid;
+border-color:black;
+border-size:2px;
+}
+
+
+table.resulttable tr.normal{
+background-color:white;
+}
+table.resulttable tr.highlight{
+background-color:WhiteSmoke;
+}
+
+
+table.resulttable td{
+font-size:0.75em;
+}
+
+.enhancer{
+background-color:Orange;
+}
+
+.promoter{
+background-color:Red;
+}
+
+.dnase{
+background-color:LightGray;
+}
+
+.proteins{
+background-color:LightGreen;
+}
+
+.motifs{
+background-color:LightPink;
+}
+
+.nonsilent{
+background-color:Violet;
+}
+
+.silent{
+background-color:Thistle;
+}
+
+.eqtls{
+background-color:Yellow;
+}
