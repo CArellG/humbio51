@@ -1,3 +1,0 @@
-multicell_rnaseq.expected_count.tgz filter=lfs diff=lfs merge=lfs -text
-multicell_rnaseq.fpkm.tgz filter=lfs diff=lfs merge=lfs -text
-multicell_rnaseq.tpm.tgz filter=lfs diff=lfs merge=lfs -text

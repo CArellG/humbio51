@@ -1,5 +1,0 @@
-LTI authenticator: https://github.com/jupyterhub/ltiauthenticator
-Note: Using the hub/lti/launch suffix for the URL is important: Launch URL - https://www.example.com/hub/lti/launch
-
-#nbgitpuller
-https://jupyterhub.github.io/nbgitpuller/link

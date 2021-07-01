@@ -1,2 +1,0 @@
-genes=open('genes','r').read().strip().split('\n')
-data=open("../asinh_tpm_minus_sva.tsv",'r').read().strip().split('\n')
