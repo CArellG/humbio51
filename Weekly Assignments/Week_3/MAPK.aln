@@ -1,0 +1,128 @@
+MUSCLE (3.8) multiple sequence alignment
+
+
+NP_002737.2         MAAAAAQGGGGGEPRRTEGVGPGVP-------------GEVEMVKGQPFDVGPRYTQLQY
+NP_002740.2         MAEPLKEEDGEDGSAEPPGPVKAEPAHTAASVAAKNLALLKARSFDVTFDVGDEYEIIET
+NP_001310231.1      MSRS-KRDNN----------------------------FYSVEIGDSTFTVLKRYQNLKP
+NP_001306.1         MSQE---RPT----------------------------FYRQELNKTIWEVPERYQNLSP
+NP_002742.3         MSGP---RAG----------------------------FYRQELNKTVWEVPQRLQGLRP
+NP_002745.1         --MSLIRKKG----------------------------FYKQDVNKTAWELPKTYVSPTH
+NP_002960.2         MSSPPPARSG----------------------------FYRQEVTKTAWEVRAVYRDLQP
+                                                                    : :         
+
+NP_002737.2         IGEGAYGMVSSAYDHVRKTRVAIKKIS-PFEHQTYCQRTLREIQILLRFRHENVIGIRDI
+NP_002740.2         IGNGAYGVVSSARRRLTGQQVAIKKIPNAFDVVTNAKRTLRELKILKHFKHDNIIAIKDI
+NP_001310231.1      IGSGAQGIVCAAYDAILERNVAIKKLSRPFQNQTHAKRAYRELVLMKCVNHKNIIGLLNV
+NP_001306.1         VGSGAYGSVCAAFDTKTGLRVAVKKLSRPFQSIIHAKRTYRELRLLKHMKHENVIGLLDV
+NP_002742.3         VGSGAYGSVCSAYDARLRQKVAVKKLSRPFQSLIHARRTYRELRLLKHLKHENVIGLLDV
+NP_002745.1         VGSGAYGSVCSAIDKRSGEKVAIKKLSRPFQSEIFAKRAYRELLLLKHMQHENVIGLLDV
+NP_002960.2         VGSGAYGAVCSAVDGRTGAKVAIKKLYRPFQSELFAKRAYRELRLLKHMRHENVIGLLDV
+                    :*.** * *.:*       .**:**:  .*:    ..*: **: ::  ..*.*:*.: ::
+
+NP_002737.2         LR-ASTLEAMRDVYIVQDLMETDLYKLLKSQQ-LSNDHICYFLYQILRGLKYIHSANVLH
+NP_002740.2         LRPTVPYGEFKSVYVVLDLMESDLHQIIHSSQPLTLEHVRYFLYQLLRGLKYMHSAQVIH
+NP_001310231.1      FTPQKSLEEFQDVYIVMELMDANLCQVIQME--LDHERMSYLLYQMLCGIKHLHSAGIIH
+NP_001306.1         FTPARSLEEFNDVYLVTHLMGADLNNIVKCQK-LTDDHVQFLIYQILRGLKYIHSADIIH
+NP_002742.3         FTPATSIEDFSEVYLVTTLMGADLNNIVKCQA-LSDEHVQFLVYQLLRGLKYIHSAGIIH
+NP_002745.1         FTPASSLRNFYDFYLVMPFMQTDLQKIMGME--FSEEKIQYLVYQMLKGLKYIHSAGVVH
+NP_002960.2         FTPDETLDDFTDFYLVMPFMGTDLGKLMKHEK-LGEDRIQFLVYQMLKGLRYIHAAGIIH
+                    :    .   : ..*:*  :* ::* :::  .  :  :.: :::**:* *:.::*:* ::*
+
+NP_002737.2         RDLKPSNLLINTTCDLKICDFGLAR-IADPEHDHTGFLTEYVATRWYRAPEIMLNSKGYT
+NP_002740.2         RDLKPSNLLVNENCELKIGDFGMARGLCTSPAEHQYFMTEYVATRWYRAPELMLSLHEYT
+NP_001310231.1      RDLKPSNIVVKSDCTLKILDFGLAR-----TAGTSFMMTPYVVTRYYRAPEVILG-MGYK
+NP_001306.1         RDLKPSNLAVNEDCELKILDFGLAR-----HTDDE--MTGYVATRWYRAPEIMLNWMHYN
+NP_002742.3         RDLKPSNVAVNEDCELRILDFGLAR-----QADEE--MTGYVATRWYRAPEIMLNWMHYN
+NP_002745.1         RDLKPGNLAVNEDCELKILDFGLAR-----HADAE--MTGYVVTRWYRAPEVILSWMHYN
+NP_002960.2         RDLKPGNLAVNEDCELKILDFGLAR-----QADSE--MTGYVVTRWYRAPEVILNWMRYT
+                    *****.*: ::  * *.* ***:**            :* **.**:*****::*.   *.
+
+NP_002737.2         KSIDIWSVGCILAEMLSNRPIFPGKHYLDQLNHILGILGSPSQEDLNCIINMKARNYLQS
+NP_002740.2         QAIDLWSVGCIFGEMLARRQLFPGKNYVHQLQLIMMVLGTPSPAVIQAVGAERVRAYIQS
+NP_001310231.1      ENVDLWSVGCIMGEMVCHKILFPGRDYIDQWNKVIEQLGTPCPEFMKKLQP-TVRTYVEN
+NP_001306.1         QTVDIWSVGCIMAELLTGRTLFPGTDHINQLQQIMRLTGTPPAYLINRMPSHEARNYIQS
+NP_002742.3         QTVDIWSVGCIMAELLQGKALFPGSDYIDQLKRIMEVVGTPSPEVLAKISSEHARTYIQS
+NP_002745.1         QTVDIWSVGCIMAEMLTGKTLFKGKDYLDQLTQILKVTGVPGTEFVQKLNDKAAKSYIQS
+NP_002960.2         QTVDIWSVGCIMAEMITGKTLFKGSDHLDQLKEIMKVTGTPPAEFVQRLQSDEAKNYMKG
+                    : :*:******:.*::  . :* *  :: *   ::   * *    :  :    .. *::.
+
+NP_002737.2         LPSKTKVAWAKLFPKS------------DSKALDLLDRMLTFNPNKRITVEEALAHPYLE
+NP_002740.2         LPPRQPVPWETVYPGA------------DRQALSLLGRMLRFEPSARISAAAALRHPFLA
+NP_001310231.1      RPKYAGYSFEKLFPDVLFPADSEHNKLKASQARDLLSKMLVIDASKRISVDEALQHPYIN
+NP_001306.1         LTQMPKMNFANVFIGA------------NPLAVDLLEKMLVLDSDKRITAAQALAHAYFA
+NP_002742.3         LPPMPQKDLSSIFRGA------------NPLAIDLLGRMLVLDSDQRVSAAEALAHAYFS
+NP_002745.1         LPQTPRKDFTQLFPRA------------SPQAADLLEKMLELDVDKRLTAAQALTHPFFE
+NP_002960.2         LPELEKKDFASILTNA------------SPLAVNLLEKMLVLDAEQRVTAGEALAHPYFE
+                     .         :                   * .** .** :: . *::.  ** *.:: 
+
+NP_002737.2         QYYDPTDEPVAEEPF-TFAMELDDLPKERLKELIFQET-------------ARFQP----
+NP_002740.2         KYHDPDDEPDCAPPF-DFAFDREALTRERIKEAIVAEIEDFHARREGIRQQIRFQPSLQP
+NP_001310231.1      VWYDPSEAEAPPPKIPDKQLDEREHTIEEWKELIYKEV-------------MDLEE----
+NP_001306.1         QYHDPDDEPVADP-Y-DQSFESRDLLIDEWKSLTYDEV-------------ISFVP----
+NP_002742.3         QYHDPEDEPEAEP-Y-DESVEAKERTLEEWKELTYQEV-------------LSFKP----
+NP_002745.1         PFRDPEEETEAQQPF-DDSLEHEKLTVDEWKQHIYKEI-------------VNFSP----
+NP_002960.2         SLHDTEDEPQVQK-Y-DDSFDDVDRTLDEWKRVTYKEV-------------LSFKP----
+                       *. :            .:      :  *     *                :      
+
+NP_002737.2         ------------------------------------------------------------
+NP_002740.2         VASEPGCPDVEMPSPWAPSGDCAMESPPPAPPPCPGPAPDTIDLTLQPPPPVSEPAPPKK
+NP_001310231.1      ------------------------------------------------------------
+NP_001306.1         ------------------------------------------------------------
+NP_002742.3         ------------------------------------------------------------
+NP_002745.1         ------------------------------------------------------------
+NP_002960.2         ------------------------------------------------------------
+                                                                                
+
+NP_002737.2         ------------------------------------------------------------
+NP_002740.2         DGAISDNTKAALKAALLKSLRSRLRDGPSAPLEAPEPRKPVTAQERQREREEKRRRRQER
+NP_001310231.1      ------------------------------------------------------------
+NP_001306.1         ------------------------------------------------------------
+NP_002742.3         ------------------------------------------------------------
+NP_002745.1         ------------------------------------------------------------
+NP_002960.2         ------------------------------------------------------------
+                                                                                
+
+NP_002737.2         ------------------------------------------------------------
+NP_002740.2         AKEREKRRQERERKERGAGASGGPSTDPLAGLVLSDNDRSLLERWTRMARPAAPALTSVP
+NP_001310231.1      ------------------------------------------------------------
+NP_001306.1         ------------------------------------------------------------
+NP_002742.3         ------------------------------------------------------------
+NP_002745.1         ------------------------------------------------------------
+NP_002960.2         ------------------------------------------------------------
+                                                                                
+
+NP_002737.2         -----------------------------------------------------------G
+NP_002740.2         APAPAPTPTPTPVQPTSPPPGPVAQPTGPQPQSAGSTSGPVPQPACPPPGPAPHPTGPPG
+NP_001310231.1      ----------------------------------------------------RTKNGVIR
+NP_001306.1         ----------------------------------------------------P----PLD
+NP_002742.3         ----------------------------------------------------PEPPKPPG
+NP_002745.1         ----------------------------------------------------IARKDSRR
+NP_002960.2         ----------------------------------------------------PRQLGARV
+                                                                                
+
+NP_002737.2         VLEAP-------------------------------------------------------
+NP_002740.2         PIPVPAPPQIATSTSLLAAQSLVPPPGLPGSSTPGVLPYFPPGLPPPDAGGAPQSSMSES
+NP_001310231.1      GQPSPLAQVQQ-------------------------------------------------
+NP_001306.1         QEEMES------------------------------------------------------
+NP_002742.3         SLEIEQ------------------------------------------------------
+NP_002745.1         RSGMKL------------------------------------------------------
+NP_002960.2         SKETPL------------------------------------------------------
+                                                                                
+
+NP_002737.2         ------------------------------------------------------------
+NP_002740.2         PDVNLVTQQLSKSQVEDPLPPVFSGTPKGSGAGYGVGFDLEEFLNQSFDMGVADGPQDGQ
+NP_001310231.1      ------------------------------------------------------------
+NP_001306.1         ------------------------------------------------------------
+NP_002742.3         ------------------------------------------------------------
+NP_002745.1         ------------------------------------------------------------
+NP_002960.2         ------------------------------------------------------------
+                                                                                
+
+NP_002737.2         -------------------------------------------------
+NP_002740.2         ADSASLSASLLADWLEGHGMNPADIESLQREIQMDSPMLLADLPDLQDP
+NP_001310231.1      -------------------------------------------------
+NP_001306.1         -------------------------------------------------
+NP_002742.3         -------------------------------------------------
+NP_002745.1         -------------------------------------------------
+NP_002960.2         -------------------------------------------------
+                                                                     
