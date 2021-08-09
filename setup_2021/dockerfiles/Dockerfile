@@ -255,3 +255,11 @@ RUN tar -xzvf muscle3.8.31_i86linux64.tar.gz
 RUN mv muscle3.8.31_i86linux64 muscle
 RUN mv muscle /usr/bin/muscle
 RUN chmod 775 /usr/bin/muscle
+
+#PLINK
+WORKDIR /opt
+RUN wget https://s3.amazonaws.com/plink1-assets/plink_linux_x86_64_20210606.zip
+RUN unzip plink_linux_x86_64_20210606.zip
+RUN chmod +x plink 
+RUN mv plink /usr/bin/
+
