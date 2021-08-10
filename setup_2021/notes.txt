@@ -27,3 +27,12 @@ kubectl get events -n jhub
 
 for pods stuck in pending: 
 https://discourse.jupyter.org/t/singleuser-pods-stuck-in-pending/6349/8
+
+#detaching:
+gcloud compute instances list #gives the pool name that disk is attached to
+gcloud compute instances detach-disk gke-humbio51-2021-instructo-user-pool-94fec993-r1hz  --disk humbio51-data-instructor-pv-persistentdisk
+
+
+gcloud compute instances detach-disk disk-mod-instance  --disk humbio51-data-pv-persistentdisk
+gcloud compute instances detach-disk disk-mod-instance  --disk humbio51-data-instructor-pv-persistentdisk
+#UNMOUNT the disk once ready to re-attach to instance (don't force remount it)
