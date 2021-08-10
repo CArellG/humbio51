@@ -24,7 +24,7 @@ scheduling:
 singleuser:
   image:
     name: kundajelab/humbio51
-    tag: f49ba135ae2a
+    tag: latest
   storage:
     capacity: 5Gi
     extraVolumes:

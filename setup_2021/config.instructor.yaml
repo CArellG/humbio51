@@ -23,7 +23,7 @@ singleuser:
         readOnly: true  
   image:
     name: kundajelab/humbio51
-    tag: f49ba135ae2a
+    tag: latest
 hub:
   extraConfig:
     jupyterlab: |
